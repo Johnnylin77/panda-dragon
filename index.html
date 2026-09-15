@@ -3,149 +3,159 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f4f0e7">
-<meta name="description" content="給小查理 — 大貓熊與小小龍，那段一起走過的路">
+<meta name="theme-color" content="#f4efe3">
+<meta name="description" content="給小查理 — 大熊貓與小小龍，那段一起走過的路（典藏版）">
 <meta name="robots" content="noindex, nofollow">
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>給小查理</title>
+<title>給小查理・典藏版</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=Long+Cang&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=Long+Cang&display=swap">
 <style>
   :root{
-    --ground:#f4f0e7; --paper-2:#efe9db; --paper-edge:#e7dfcd;
-    --ink:#3c3a33; --ink-soft:#726c5d; --ink-faint:#9a9585;
-    --line:#ddd5c3; --accent:#56766a;
-    --panda:#fbf8f1; --panda-line:#e5ddca; --panda-ink:#33302a;
-    --dragon:#8fae9f; --dragon-2:#c1d2c6; --dragon-ink:#3d5a4d;
-    --hill-1:#e0e0cd; --hill-2:#e8e6d6; --path:#e0d6bf;
-    --sun:#ecc887; --moon:#f3ece0; --star:#b3b48c; --snow:#ffffff;
-    --petal:#e6b7bd; --rain:#9fb2bd; --stream:#c4d6d9;
-    --leaf-a:#cf9b57; --leaf-b:#b57a4a; --leaf-c:#b8944e;
-    --flower:#e6b7bd; --flower2:#e9c887; --steam:#c9c3b3;
-    --sky-dawn-top:#f0e7dc; --sky-dawn-bot:#eef0e9;
-    --sky-dusk-top:#ecd9c9; --sky-dusk-bot:#eae5d8;
-    --sky-night-top:#b6c3d0; --sky-night-bot:#dfe0d8;
-    --sky-winter-top:#d7e0e6; --sky-winter-bot:#eef1ec;
-    --sky-spring-top:#f3e5ea; --sky-spring-bot:#eef2e6;
-    --sky-summer-top:#e7eede; --sky-summer-bot:#f5f2e5;
-    --sky-autumn-top:#f2e3cd; --sky-autumn-bot:#f4eddc;
-    --sky-dark-top:#9fb0be; --sky-dark-bot:#c7ccc8;
+    --paper:#f4efe3; --paper-2:#f6f2e8; --edge:#e6dfce;
+    --ink:#3d3a31; --ink-soft:#6f6a5a; --ink-faint:#a49d88;
+    --en:#6d6553; --footer:#9a927c; --rule:#ddd4bf;
+    --sumi:#33302a;
+    --panda:#faf6ec; --panda-line:#8a8578; --panda-ink:#33302a;
+    --dragon:#8aa694; --dragon-2:#bcccbf; --dragon-ink:#415a4c;
+    --hill-1:#d9d8c0; --hill-2:#e4e2ce; --path:#ddd2b8;
+    --sun:#e8c883; --moon:#efe7d6; --star:#b6b48a; --snow:#fbfaf5;
+    --petal:#dcb0b4; --rain:#a3b3ba; --stream:#c3d3d4;
+    --leaf-a:#c99a58; --leaf-b:#b5713f; --leaf-c:#b08f4a;
+    --flower:#dcb0b4; --flower2:#e3c179; --steam:#c6c0af;
+    --sky-prologue-a:#e7ddc9; --sky-prologue-b:#f1ead9;
+    --sky-night-a:#b9c3c9; --sky-night-b:#dcdcce;
+    --sky-winter-a:#cdd7da; --sky-winter-b:#e6e7dc;
+    --sky-spring-a:#ecdadd; --sky-spring-b:#e7ebd7;
+    --sky-summer-a:#dbe4cd; --sky-summer-b:#eee7cf;
+    --sky-autumn-a:#e6cba6; --sky-autumn-b:#ecdfc4;
+    --sky-ink-a:#cbc6ba; --sky-ink-b:#ddd8cc;
   }
   :root:not([data-theme="light"]){
     @media (prefers-color-scheme: dark){
-      --ground:#1c2026; --paper-2:#232830; --paper-edge:#2c323b;
-      --ink:#e9e3d5; --ink-soft:#a7a08f; --ink-faint:#6f6a5c;
-      --line:#333a44; --accent:#94b4a3;
-      --panda:#ece7db; --panda-line:#cfc8b6; --panda-ink:#2b2925;
-      --dragon:#7ca08f; --dragon-2:#9db8ab; --dragon-ink:#2c463b;
-      --hill-1:#2a3037; --hill-2:#242a31; --path:#333a33;
-      --sun:#caa25e; --moon:#d9d3c4; --star:#c7d0da; --snow:#e9edf1;
-      --petal:#c98e97; --rain:#5f6f79; --stream:#38505a;
-      --leaf-a:#b6864a; --leaf-b:#a5613c; --leaf-c:#9d7c42;
-      --flower:#c98e97; --flower2:#c9a45e; --steam:#5a5f68;
-      --sky-dawn-top:#282b31; --sky-dawn-bot:#1e232a;
-      --sky-dusk-top:#2a2129; --sky-dusk-bot:#1e232a;
-      --sky-night-top:#1a2735; --sky-night-bot:#141a21;
-      --sky-winter-top:#232b33; --sky-winter-bot:#1c2128;
-      --sky-spring-top:#2b2731; --sky-spring-bot:#1e232a;
-      --sky-summer-top:#232a26; --sky-summer-bot:#1d222a;
-      --sky-autumn-top:#2d2820; --sky-autumn-bot:#20242a;
-      --sky-dark-top:#161f29; --sky-dark-bot:#10151b;
+      --paper:#1b1f22; --paper-2:#20252a; --edge:#2a3036;
+      --ink:#e7e1d2; --ink-soft:#a49d8b; --ink-faint:#6e6959;
+      --en:#a49b86; --footer:#7c7565; --rule:#2f353c;
+      --sumi:#d8d2c3;
+      --panda:#e6e1d3; --panda-line:#9a9482; --panda-ink:#26241f;
+      --dragon:#79988a; --dragon-2:#9ab0a4; --dragon-ink:#2b4438;
+      --hill-1:#282e33; --hill-2:#222a30; --path:#333a34;
+      --sun:#c6a05c; --moon:#d6d0c0; --star:#c5cdd6; --snow:#e7ebef;
+      --petal:#c58e96; --rain:#5d6d76; --stream:#37505a;
+      --leaf-a:#b3854a; --leaf-b:#a4603c; --leaf-c:#9b7a42;
+      --flower:#c58e96; --flower2:#c6a25c; --steam:#5a5f68;
+      --sky-prologue-a:#272a30; --sky-prologue-b:#1c2126;
+      --sky-night-a:#18242f; --sky-night-b:#12181e;
+      --sky-winter-a:#222a32; --sky-winter-b:#1b2026;
+      --sky-spring-a:#2a2630; --sky-spring-b:#1c2126;
+      --sky-summer-a:#222a26; --sky-summer-b:#1b2027;
+      --sky-autumn-a:#2c2720; --sky-autumn-b:#1e2227;
+      --sky-ink-a:#2a2e31; --sky-ink-b:#1e2328;
     }
   }
   :root[data-theme="dark"]{
-    --ground:#1c2026; --paper-2:#232830; --paper-edge:#2c323b;
-    --ink:#e9e3d5; --ink-soft:#a7a08f; --ink-faint:#6f6a5c;
-    --line:#333a44; --accent:#94b4a3;
-    --panda:#ece7db; --panda-line:#cfc8b6; --panda-ink:#2b2925;
-    --dragon:#7ca08f; --dragon-2:#9db8ab; --dragon-ink:#2c463b;
-    --hill-1:#2a3037; --hill-2:#242a31; --path:#333a33;
-    --sun:#caa25e; --moon:#d9d3c4; --star:#c7d0da; --snow:#e9edf1;
-    --petal:#c98e97; --rain:#5f6f79; --stream:#38505a;
-    --leaf-a:#b6864a; --leaf-b:#a5613c; --leaf-c:#9d7c42;
-    --flower:#c98e97; --flower2:#c9a45e; --steam:#5a5f68;
-    --sky-dawn-top:#282b31; --sky-dawn-bot:#1e232a;
-    --sky-dusk-top:#2a2129; --sky-dusk-bot:#1e232a;
-    --sky-night-top:#1a2735; --sky-night-bot:#141a21;
-    --sky-winter-top:#232b33; --sky-winter-bot:#1c2128;
-    --sky-spring-top:#2b2731; --sky-spring-bot:#1e232a;
-    --sky-summer-top:#232a26; --sky-summer-bot:#1d222a;
-    --sky-autumn-top:#2d2820; --sky-autumn-bot:#20242a;
-    --sky-dark-top:#161f29; --sky-dark-bot:#10151b;
+    --paper:#1b1f22; --paper-2:#20252a; --edge:#2a3036;
+    --ink:#e7e1d2; --ink-soft:#a49d8b; --ink-faint:#6e6959;
+    --en:#a49b86; --footer:#7c7565; --rule:#2f353c;
+    --sumi:#d8d2c3;
+    --panda:#e6e1d3; --panda-line:#9a9482; --panda-ink:#26241f;
+    --dragon:#79988a; --dragon-2:#9ab0a4; --dragon-ink:#2b4438;
+    --hill-1:#282e33; --hill-2:#222a30; --path:#333a34;
+    --sun:#c6a05c; --moon:#d6d0c0; --star:#c5cdd6; --snow:#e7ebef;
+    --petal:#c58e96; --rain:#5d6d76; --stream:#37505a;
+    --leaf-a:#b3854a; --leaf-b:#a4603c; --leaf-c:#9b7a42;
+    --flower:#c58e96; --flower2:#c6a25c; --steam:#5a5f68;
+    --sky-prologue-a:#272a30; --sky-prologue-b:#1c2126;
+    --sky-night-a:#18242f; --sky-night-b:#12181e;
+    --sky-winter-a:#222a32; --sky-winter-b:#1b2026;
+    --sky-spring-a:#2a2630; --sky-spring-b:#1c2126;
+    --sky-summer-a:#222a26; --sky-summer-b:#1b2027;
+    --sky-autumn-a:#2c2720; --sky-autumn-b:#1e2227;
+    --sky-ink-a:#2a2e31; --sky-ink-b:#1e2328;
   }
 
   *{box-sizing:border-box}
   body{
-    background:var(--ground); color:var(--ink);
+    background:var(--paper); color:var(--ink);
     font-family:"Noto Serif TC",Georgia,"Songti TC",serif;
     min-height:100vh; margin:0;
     display:flex; align-items:center; justify-content:center;
-    padding:24px 16px 40px; -webkit-font-smoothing:antialiased;
+    padding:22px 18px 36px; -webkit-font-smoothing:antialiased;
   }
-  .book{width:100%;max-width:700px;margin:0 auto}
-  .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 4px 12px;flex-wrap:wrap}
-  .topbar .mark{font-family:"Long Cang",cursive;font-size:22px;color:var(--ink-soft);letter-spacing:.02em;margin-right:auto}
-  .topbar button{
-    font-family:inherit;font-size:12px;letter-spacing:.12em;
-    color:var(--ink-soft);background:none;border:1px solid var(--line);
-    border-radius:999px;padding:6px 13px;cursor:pointer;transition:.2s;
-  }
+  .book{width:100%;max-width:600px;margin:0 auto}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px 14px;flex-wrap:wrap}
+  .topbar .mark{font-family:"Long Cang",cursive;font-size:21px;color:var(--ink-soft);letter-spacing:.03em;margin-right:auto}
+  .topbar button{font-family:"EB Garamond",serif;font-style:italic;font-size:14px;letter-spacing:.03em;color:var(--ink-soft);background:none;border:1px solid var(--rule);border-radius:2px;padding:5px 14px;cursor:pointer;transition:.2s}
   .topbar button:hover{color:var(--ink);border-color:var(--ink-faint)}
 
-  .spread{
-    position:relative;background:var(--paper-2);
-    border:1px solid var(--line);border-radius:20px;
-    box-shadow:0 1px 0 var(--paper-edge),0 18px 40px -28px rgba(40,36,28,.5);
-    overflow:hidden;
-  }
-  .page{display:none;flex-direction:column}
+  .leaf{position:relative;background:var(--paper-2);border:1px solid var(--edge);box-shadow:0 1px 0 var(--edge),0 20px 44px -34px rgba(40,34,24,.55)}
+  .page{display:none;flex-direction:column;padding:30px clamp(18px,5vw,40px) 26px;position:relative}
   .page.is-current{display:flex}
-  @media (prefers-reduced-motion: no-preference){.page.is-current{animation:fade .6s ease both}}
-  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: no-preference){
+    .page.is-current{animation:ebk .34s ease both}
+    .page.is-current.dir-prev{animation:ebkL .34s ease both}
+  }
+  @keyframes ebk{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+  @keyframes ebkL{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
 
-  .page-art{position:relative;width:100%}
-  .page-art svg{display:block;width:100%;height:auto}
-  .tapzone{position:absolute;top:0;bottom:0;width:42%;border:0;background:transparent;cursor:pointer;padding:0;z-index:3}
+  .plate{position:relative;width:100%}
+  .plate svg{display:block;width:100%;height:auto}
+  .tapzone{position:absolute;top:0;bottom:0;width:32%;border:0;background:transparent;cursor:pointer;padding:0;z-index:5;-webkit-tap-highlight-color:transparent}
   .tapzone.prev{left:0} .tapzone.next{right:0}
-  .tapzone:focus-visible{outline:2px solid var(--accent);outline-offset:-6px;border-radius:12px}
+  .tapzone:focus-visible{outline:1px solid var(--dragon);outline-offset:-8px}
+  .readletter{position:relative;z-index:6}
 
-  .page-copy{padding:22px clamp(20px,6vw,54px) 40px;text-align:center;display:flex;flex-direction:column;gap:.55em}
-  .page-copy .line{margin:0;font-size:clamp(16px,2.5vw,19px);font-weight:300;line-height:2.05;letter-spacing:.03em;color:var(--ink);text-wrap:balance}
-  .page-copy .note{font-family:"Long Cang",cursive;font-size:clamp(20px,3.4vw,25px);line-height:1.5;color:var(--ink-soft);margin-top:.2em}
-  .page-copy .sign{margin-top:1.4em;align-self:flex-end;font-family:"Long Cang",cursive;font-size:clamp(19px,3vw,23px);color:var(--ink-soft);text-align:right;line-height:1.7}
-  .page-copy .readletter{margin:1.2em auto 0;font-family:inherit;font-size:13px;letter-spacing:.14em;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:999px;padding:9px 20px;cursor:pointer;transition:.2s}
-  .page-copy .readletter:hover{background:var(--accent);color:var(--paper-2)}
+  .verse{margin:26px auto 0;max-width:34em;text-align:center;display:flex;flex-direction:column;gap:1.1em}
+  .zh{margin:0;font-size:clamp(16px,2.6vw,18.5px);font-weight:300;line-height:2.15;letter-spacing:.04em;color:var(--ink);text-wrap:balance}
+  .zh .say{white-space:nowrap}
+  .en{margin:0;font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:clamp(15px,2.4vw,17px);line-height:1.7;letter-spacing:.01em;color:var(--en);text-wrap:balance}
+  .note{font-family:"Long Cang",cursive;font-size:clamp(19px,3.2vw,23px);line-height:1.5;color:var(--ink-soft)}
+  .sign{align-self:center;font-family:"Long Cang",cursive;font-size:clamp(19px,3vw,22px);color:var(--ink-soft);line-height:1.7;margin-top:.3em}
+  .readletter{margin:1.5em auto 0;font-family:"EB Garamond",serif;font-style:italic;font-size:15px;letter-spacing:.02em;color:var(--dragon-ink);background:none;border:1px solid var(--dragon);border-radius:2px;padding:8px 20px;cursor:pointer;transition:.2s}
+  .readletter:hover{background:var(--dragon);color:var(--paper-2)}
 
-  .page.cover .page-copy{padding-top:30px;padding-bottom:44px;gap:.35em}
-  .cover .kicker{font-size:12px;letter-spacing:.42em;color:var(--accent);text-transform:uppercase;margin-bottom:.4em}
-  .cover h1{font-weight:500;font-size:clamp(38px,10vw,58px);margin:0;letter-spacing:.08em;color:var(--ink)}
-  .cover .sub{font-family:"Long Cang",cursive;font-size:clamp(21px,4vw,28px);color:var(--ink-soft);margin-top:.5em;letter-spacing:.03em}
-  .cover .hint{margin-top:1.7em;font-size:12.5px;letter-spacing:.2em;color:var(--ink-faint)}
+  .colophon{margin:30px auto 2px;display:flex;align-items:center;justify-content:center;gap:14px;color:var(--footer);font-size:12.5px;letter-spacing:.34em}
+  .colophon .season{font-family:"Noto Serif TC",serif}
+  .colophon .no{font-variant-numeric:tabular-nums}
+  .colophon .dot{width:3px;height:3px;border-radius:50%;background:var(--footer);opacity:.7}
 
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 6px 0}
-  .nav button{font-family:inherit;font-size:14px;color:var(--ink-soft);background:none;border:1px solid var(--line);width:44px;height:44px;border-radius:999px;cursor:pointer;transition:.2s;display:grid;place-items:center}
+  /* frontispiece */
+  .page.cover{align-items:center;text-align:center;padding-top:20px}
+  .cover .kick{font-family:"EB Garamond",serif;font-style:italic;font-size:15px;letter-spacing:.08em;color:var(--en);margin-bottom:.2em}
+  .cover h1{font-weight:500;font-size:clamp(34px,9vw,52px);margin:.1em 0 0;letter-spacing:.12em;color:var(--ink)}
+  .cover .sub{font-family:"Long Cang",cursive;font-size:clamp(20px,4vw,26px);color:var(--ink-soft);margin-top:.5em;letter-spacing:.04em}
+  .cover .years{margin-top:1.5em;font-family:"EB Garamond",serif;font-style:italic;font-size:14px;letter-spacing:.28em;color:var(--footer);font-variant-numeric:tabular-nums}
+  .cover .hint{margin-top:1.4em;font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.06em;color:var(--ink-faint)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4px 0}
+  .nav button{font-family:"EB Garamond",serif;font-size:15px;color:var(--ink-soft);background:none;border:1px solid var(--rule);width:42px;height:42px;border-radius:50%;cursor:pointer;transition:.2s;display:grid;place-items:center}
   .nav button:hover:not(:disabled){color:var(--ink);border-color:var(--ink-faint)}
-  .nav button:disabled{opacity:.32;cursor:default}
-  .counter{font-size:12px;letter-spacing:.3em;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+  .nav button:disabled{opacity:.3;cursor:default}
+  .count{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.24em;color:var(--ink-faint);font-variant-numeric:tabular-nums}
 
-  /* letter overlay */
-  .letter-view{position:fixed;inset:0;z-index:50;background:rgba(30,26,20,.5);display:flex;align-items:flex-start;justify-content:center;padding:24px 16px;overflow:auto}
-  .letter-card{background:var(--ground);color:var(--ink);max-width:640px;width:100%;margin:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 24px 60px -30px rgba(0,0,0,.6);padding:clamp(26px,5vw,46px)}
-  .letter-card h2{font-family:"Long Cang",cursive;font-weight:400;font-size:32px;margin:0 0 2px;color:var(--ink)}
-  .letter-card .lc-kick{font-size:11px;letter-spacing:.3em;color:var(--accent);text-transform:uppercase}
-  .letter-card .lc-time{font-size:12px;letter-spacing:.24em;color:var(--ink-faint);margin:14px 0 20px;font-variant-numeric:tabular-nums}
-  .letter-card p{font-size:15.5px;line-height:2.05;font-weight:300;letter-spacing:.02em;margin:0 0 1.1em;color:var(--ink)}
+  .letter-view{position:fixed;inset:0;z-index:50;background:rgba(28,24,16,.52);display:flex;align-items:flex-start;justify-content:center;padding:22px 16px;overflow:auto}
+  .letter-card{background:var(--paper);color:var(--ink);max-width:620px;width:100%;margin:auto;border:1px solid var(--edge);box-shadow:0 26px 64px -32px rgba(0,0,0,.6);padding:clamp(26px,5vw,46px)}
+  .letter-card .lc-kick{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.14em;color:var(--dragon-ink)}
+  .letter-card h2{font-family:"Long Cang",cursive;font-weight:400;font-size:30px;margin:2px 0 0;color:var(--ink)}
+  .letter-card .lc-time{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.16em;color:var(--footer);margin:12px 0 20px;font-variant-numeric:tabular-nums}
+  .letter-card p{font-size:15.5px;line-height:2.1;font-weight:300;letter-spacing:.02em;margin:0 0 1.1em;color:var(--ink)}
   .letter-card .lc-sign{font-family:"Long Cang",cursive;font-size:22px;color:var(--ink-soft);text-align:right;margin-top:8px}
-  .letter-close{position:sticky;top:0;float:right;margin:-8px -8px 0 0;font-family:inherit;font-size:20px;line-height:1;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--line);width:38px;height:38px;border-radius:999px;cursor:pointer}
+  .letter-close{position:sticky;top:0;float:right;margin:-8px -8px 0 0;font-family:"EB Garamond",serif;font-size:20px;line-height:1;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--edge);width:36px;height:36px;border-radius:50%;cursor:pointer}
   .letter-close:hover{color:var(--ink)}
+  .lc-tools{display:flex;gap:8px;margin:2px 0 18px;flex-wrap:wrap}
+  .lc-tools button{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;color:var(--ink-soft);background:none;border:1px solid var(--rule);border-radius:2px;padding:5px 12px;cursor:pointer}
+  .lc-tools button:hover{color:var(--ink);border-color:var(--ink-faint)}
+  .letter-body{outline:none}
+  .letter-body.editing{background:rgba(138,166,148,.09);border:1px dashed var(--dragon);border-radius:4px;padding:14px 16px;margin:0 -6px}
+  .lc-hint{font-family:"EB Garamond",serif;font-style:italic;font-size:12.5px;line-height:1.6;color:var(--footer);margin:12px 0 0}
+  .letter-card .lc-quote{text-align:center;color:var(--en);line-height:1.95;margin:1.5em 0 1em;padding-top:1.2em;border-top:1px solid var(--rule)}
 
   @media print{
     body{padding:0;background:#fff;display:block}
     .topbar,.nav,.tapzone,.readletter,.letter-view{display:none!important}
     .book{max-width:none}
-    .spread{box-shadow:none;border:none;border-radius:0;overflow:visible;background:transparent}
-    .page{display:flex !important;opacity:1!important;transform:none!important;page-break-after:always;break-after:page;padding:16px 0}
+    .leaf{box-shadow:none;border:none}
+    .page{display:flex !important;page-break-after:always;break-after:page}
     .page:last-child{page-break-after:auto;break-after:auto}
   }
 </style>
@@ -154,13 +164,13 @@
 <div class="book">
   <div class="topbar">
     <span class="mark">給小查理</span>
-    <button id="letterBtn" type="button">✉ 完整的信</button>
-    <button id="printBtn" type="button">列印／存成 PDF</button>
+    <button id="letterBtn" type="button">the whole letter</button>
+    <button id="printBtn" type="button">print / PDF</button>
   </div>
-  <div class="spread"><div id="stage"></div></div>
+  <div class="leaf"><div id="stage"></div></div>
   <div class="nav">
     <button id="prev" type="button" aria-label="上一頁">‹</button>
-    <span class="counter" id="counter"></span>
+    <span class="count" id="count"></span>
     <button id="next" type="button" aria-label="下一頁">›</button>
   </div>
 </div>
@@ -168,288 +178,362 @@
 <div class="letter-view" id="letterView" hidden>
   <div class="letter-card">
     <button class="letter-close" id="letterClose" type="button" aria-label="關閉">×</button>
-    <div class="lc-kick">大貓熊與小小龍 · 逐字稿</div>
+    <div class="lc-kick">大熊貓與小小龍 · 逐字稿</div>
     <h2>To：小查理</h2>
     <div class="lc-time">2022.09　·　2023　·　2024　·　2025　·　2026.09</div>
-    <p>當妳看到這段訊息時，我已經卸下勤業的包袱，在收到妳的小卡片時，妳可能很難想像我有多麼感動 QAQ（我真的是每晚睡前都看一遍，一直在回顧這幾年的感受）</p>
+    <div class="lc-tools">
+      <button id="lcEdit" type="button">✎ 編輯</button>
+      <button id="lcCopy" type="button">⧉ 複製全文</button>
+      <button id="lcReset" type="button">↺ 還原</button>
+    </div>
+    <div class="letter-body" id="letterBody">
+    <p>當妳看到這段訊息時，我已經卸下勤業的包袱，在收到妳的小卡片時，妳可能很難想像我有多麼感動 QQ（我真的是每晚睡前都看一遍，一直在回顧這幾年的感受）。</p>
     <p>曾經想過無論是妳或是我離開時，我能不能有勇氣跟妳說出我心裡的想法，很謝謝妳一如往常，給了我滿滿的自信與勇氣。下面我想跟妳說說這四年的故事，雖然有些話妳已經聽我說過了，但我還是想記錄下來！</p>
-    <p>2022、2023 是我在職涯、感情上很大的轉捩點，無論是 Grace 想離開，或是我自己在工作上遇到了很大的瓶頸，差點就離職ㄌ。</p>
-    <p>那時遇見了妳，也沒有想太多，只覺得妳很暖心、又很漂亮（不要暗爽!?），就默默的規劃了妳全年的外勤，這真的是我職涯中很重要的決定！！</p>
-    <p>在我的視角中，是妳伴隨了我度過人生中很黑暗的時刻，也幫我分擔了好多好多的憂愁，現在想想這四年的時光，好感動也好快樂。</p>
+    <p>而且怕妳不認真看，我用了繪本的方式呈現，我真的好喜歡這本書啊啊啊，會一直想起好多回憶，但妳也害我變成了愛哭鬼。</p>
+    <p>2022、2023 是我在職涯、感情上很大的轉捩點，無論是 Grace 想離開，或是我自己在工作上遇到了很大的瓶頸，真的是差點就離職了。</p>
+    <p>那時遇見了妳，也沒有想太多，只覺得妳很暖心、又很漂亮（不要暗爽!?），就默默規劃了妳全年的外勤，這真的是我職涯中很重要的決定！！</p>
+    <p>而且我覺得妳是一個很純真、很專注的人，妳只有一個小小缺點——</p>
+    <p>妳都沒有發現妳做得很好、很棒，還有時常散發出正面的氣息。</p>
+    <p>在我的視角中，是妳伴隨了我度過人生中很黑暗的時刻，也幫我分擔了好多好多的憂愁，現在想想這四年的時光，好知足也好快樂。</p>
     <p>好懷念有一陣子一直用星巴克寫笑話給妳，電審工作真的好雜好忙，但跟妳一起面對的時候，我們真的發揮了 1+1&gt;2，而且都有把事情做得很好！從沒想過晉升到 Manager 後，可以有這種體驗。</p>
+    <p>曾經想過如果能早點遇到妳，是不是我會過得更開心；但想想，我正好在這工作最有話語權、決定權的年紀遇到了妳，雖然已經被社會給摧殘，但就是這互補的狀態，才成就了我們這四年完美的配合，真的真的好謝謝妳（再次淚崩）。</p>
     <p>上次提到電影版，一直覺得妳好像吉伊。平時的妳好像缺乏自信、總是想很多，但心思很細膩，會觀察旁人需要些什麼；面對危機需要妳跳出來，都能夠把事情做得很好、很棒，還可以溫暖旁邊的人。處在這複雜的社會，要保持善良、純真，真得很不容易。</p>
-    <p>每當我遇到緊急事件、有臨時的客戶要跑，我第一個想到的都是妳，因為我知道妳會說沒問題，也給了我滿滿的自信；其實反過來，反而是妳給了我面對的勇氣。</p>
+    <p>每當我遇到緊急事件、有臨時的客戶要跑，我第一個想到的都是妳（真是抱歉 &gt;&lt;），因為我知道妳會說沒問題，也給了我滿滿的自信；其實反過來，是妳給了我面對的勇氣。</p>
     <p>雖然最後還是沒有聽妳親口說出自己三個優點，但在我心中有好多好多，我看到了妳好多的特質。</p>
-    <p>也莫名陪妳度過了人生小小手術!? 覺得看妳跨過去那一步、變成自己喜歡的樣子，也讓我好開心 XD</p>
+    <p>也莫名陪妳度過了人生小小手術!? 覺得看妳跨過去那一步、變成自己喜歡的樣子，也讓我好開心 :3</p>
     <p>忘記是從什麼時候，便養成了載妳的默契，雖然好多地方都很不順，甚至一天有兩小時都在開車 XD，但我真的沒有負擔，反而覺得讓妳輕鬆些、開心些我就好知足快樂，希望沒有造成妳的困擾，也謝謝妳信任我。</p>
     <p>對我來說也是一直在拉扯，尤其是下雨天或路途遙遠時，就會莫名的擔心妳的狀況，希望能在工作上對妳好、保持界線，但我知道自己真的常常越線，這點還是對妳很抱歉，希望沒有讓妳不舒服 &gt;&lt;</p>
-    <p>謝謝妳接受我的任性，整天把妳挖去咖啡廳 XD。</p>
-    <p>說到這…真的好多回憶細數不完，要習慣沒有妳的工作日子；但！我相信這不是休止符，只是換個身分、不同的地點繼續努力。只要妳願意，有任何的問題、困難，強尼隨叫隨到。</p>
-    <p>驀然回首，想起這些回憶，伴隨著不爭氣的淚水，但好知足、好感動。</p>
-    <div class="lc-sign">—— 強尼</div>
+    <p>還有謝謝妳接受我的任性，整天把妳挖去咖啡廳 XD。</p>
+    <p>說到這…真的好多回憶細數不完，要習慣沒有妳的工作日子；但！我相信這不是休止符，只是換個身分、不同的地點繼續努力。只要妳願意，有任何的問題、困難，強尼永遠是妳最強的後盾！</p>
+    <p>在看到妳小卡片寫到「聽到我離職，內心的拉扯」時，我心裡也好複雜啊啊啊，一直想說是不是該當作沒事地離開，但我不想有遺憾，所以把內心想到的話就打出來了，沒什麼排版、修飾——想讓妳能夠感受到，妳的努力、付出我都有看見，還有妳的重要性 &gt;&lt;</p>
+    <p>謝謝妳，我心目中年年績效五、我內心中小小的燈塔。</p>
+    <p>也希望當妳迷失、感到沮喪時，如果有需要我，我隨時都在。</p>
+    <p>（雖然千如沒有車位、旺宏被排擠、生日快樂少了三年 —— ^o^）</p>
+    <p class="lc-quote">「你在慶祝什麼？」小小龍問。<br>「我在慶祝被雨淋，」大熊貓說，「跟你一起。」</p>
+    <p>便是這四年我們一直在做的事，有妳真好 :)</p>
+    <div class="lc-sign">0915 筆　Johnny<br>—— 新竹強尼</div>
+    </div>
+    <p class="lc-hint" id="lcHint" hidden>編輯只存在這台裝置上（會自動保存）。定稿後按「複製全文」把內容傳給我，我幫妳鎖進正式版，小查理才看得到。</p>
   </div>
 </div>
 
 <script>
-/* ---------- tiny helpers ---------- */
+/* ---------- brush helpers ---------- */
 function heart(x,y,s,fill,op){op=op==null?1:op;return `<path transform="translate(${x},${y}) scale(${s})" d="M0 3 C0 -1 -6 -1 -6 3.5 C-6 7 0 10 0 13 C0 10 6 7 6 3.5 C6 -1 0 -1 0 3 Z" fill="${fill}" opacity="${op}"/>`;}
-function sparkle(x,y,r,fill){return `<path transform="translate(${x},${y})" d="M0 ${-r} L${r*0.28} ${-r*0.28} L${r} 0 L${r*0.28} ${r*0.28} L0 ${r} L${-r*0.28} ${r*0.28} L${-r} 0 L${-r*0.28} ${-r*0.28} Z" fill="${fill||'var(--sun)'}"/>`;}
+function spark(x,y,r,fill){return `<path transform="translate(${x},${y})" d="M0 ${-r} L${r*0.26} ${-r*0.26} L${r} 0 L${r*0.26} ${r*0.26} L0 ${r} L${-r*0.26} ${r*0.26} L${-r} 0 L${-r*0.26} ${-r*0.26} Z" fill="${fill||'var(--sun)'}"/>`;}
 
-/* ---------- cuter panda + dragon ---------- */
+/* ---------- panda + dragon (soft brush) ---------- */
 function panda(x,y,s){
-  return `<g transform="translate(${x},${y}) scale(${s})">
-    <ellipse cx="0" cy="4" rx="40" ry="9" fill="rgba(40,36,28,.10)"/>
-    <ellipse cx="0" cy="-28" rx="32" ry="30" fill="var(--panda)" stroke="var(--panda-line)" stroke-width="2"/>
-    <ellipse cx="-15" cy="-4" rx="12" ry="8" fill="var(--panda-ink)"/>
-    <ellipse cx="15" cy="-4" rx="12" ry="8" fill="var(--panda-ink)"/>
-    <ellipse cx="-30" cy="-30" rx="9" ry="14" fill="var(--panda-ink)" transform="rotate(24 -30 -30)"/>
-    <ellipse cx="30" cy="-30" rx="9" ry="14" fill="var(--panda-ink)" transform="rotate(-24 30 -30)"/>
-    <circle cx="0" cy="-80" r="42" fill="var(--panda)" stroke="var(--panda-line)" stroke-width="2"/>
-    <circle cx="-30" cy="-108" r="14" fill="var(--panda-ink)"/>
-    <circle cx="30" cy="-108" r="14" fill="var(--panda-ink)"/>
-    <ellipse cx="-16" cy="-82" rx="12.5" ry="16" fill="var(--panda-ink)" transform="rotate(-10 -16 -82)"/>
-    <ellipse cx="16" cy="-82" rx="12.5" ry="16" fill="var(--panda-ink)" transform="rotate(10 16 -82)"/>
-    <circle cx="-14" cy="-82" r="7" fill="#fff"/>
-    <circle cx="14" cy="-82" r="7" fill="#fff"/>
-    <circle cx="-13" cy="-81" r="4.6" fill="#2b2925"/>
-    <circle cx="15" cy="-81" r="4.6" fill="#2b2925"/>
-    <circle cx="-15" cy="-83.5" r="1.9" fill="#fff"/>
-    <circle cx="13" cy="-83.5" r="1.9" fill="#fff"/>
-    <ellipse cx="-25" cy="-68" rx="6" ry="3.6" fill="var(--petal)" opacity=".5"/>
-    <ellipse cx="25" cy="-68" rx="6" ry="3.6" fill="var(--petal)" opacity=".5"/>
-    <ellipse cx="0" cy="-68" rx="4" ry="2.7" fill="var(--panda-ink)"/>
-    <path d="M0 -65 q -5 6 -10 2 M0 -65 q 5 6 10 2" fill="none" stroke="var(--panda-ink)" stroke-width="1.6" stroke-linecap="round"/>
+  return `<g transform="translate(${x},${y}) scale(${s})" stroke="var(--panda-ink)" stroke-width="1.4" stroke-linejoin="round">
+    <ellipse cx="0" cy="5" rx="40" ry="8" fill="rgba(50,45,35,.12)" stroke="none"/>
+    <ellipse cx="0" cy="-28" rx="32" ry="30" fill="var(--panda)"/>
+    <ellipse cx="-15" cy="-3" rx="12" ry="8" fill="var(--panda-ink)" stroke="none"/>
+    <ellipse cx="15" cy="-3" rx="12" ry="8" fill="var(--panda-ink)" stroke="none"/>
+    <ellipse cx="-31" cy="-30" rx="9" ry="15" fill="var(--panda-ink)" stroke="none" transform="rotate(24 -31 -30)"/>
+    <ellipse cx="31" cy="-30" rx="9" ry="15" fill="var(--panda-ink)" stroke="none" transform="rotate(-24 31 -30)"/>
+    <circle cx="0" cy="-80" r="42" fill="var(--panda)"/>
+    <circle cx="-30" cy="-108" r="14" fill="var(--panda-ink)" stroke="none"/>
+    <circle cx="30" cy="-108" r="14" fill="var(--panda-ink)" stroke="none"/>
+    <ellipse cx="-16" cy="-82" rx="12.5" ry="16" fill="var(--panda-ink)" stroke="none" transform="rotate(-10 -16 -82)"/>
+    <ellipse cx="16" cy="-82" rx="12.5" ry="16" fill="var(--panda-ink)" stroke="none" transform="rotate(10 16 -82)"/>
+    <circle cx="-14" cy="-82" r="6.6" fill="var(--panda)" stroke="none"/>
+    <circle cx="14" cy="-82" r="6.6" fill="var(--panda)" stroke="none"/>
+    <circle cx="-13" cy="-81" r="4.4" fill="var(--panda-ink)" stroke="none"/>
+    <circle cx="15" cy="-81" r="4.4" fill="var(--panda-ink)" stroke="none"/>
+    <circle cx="-15" cy="-83.4" r="1.8" fill="var(--panda)" stroke="none"/>
+    <circle cx="13" cy="-83.4" r="1.8" fill="var(--panda)" stroke="none"/>
+    <ellipse cx="-25" cy="-68" rx="6" ry="3.4" fill="var(--petal)" stroke="none" opacity=".45"/>
+    <ellipse cx="25" cy="-68" rx="6" ry="3.4" fill="var(--petal)" stroke="none" opacity=".45"/>
+    <ellipse cx="0" cy="-68" rx="4" ry="2.7" fill="var(--panda-ink)" stroke="none"/>
+    <path d="M0 -65 q -5 6 -10 2 M0 -65 q 5 6 10 2" fill="none" stroke-width="1.5" stroke-linecap="round"/>
   </g>`;
 }
 function dragon(x,y,s){
-  return `<g transform="translate(${x},${y}) scale(${s})">
-    <ellipse cx="0" cy="3" rx="24" ry="6" fill="rgba(40,36,28,.10)"/>
-    <path d="M16 -12 q 24 4 20 24 q -3 9 -10 6 q 7 -6 1 -15 q -6 -7 -17 -5 z" fill="var(--dragon)"/>
-    <path d="M-20 -30 q -16 -8 -21 3 q 12 1 19 7 z" fill="var(--dragon-2)" opacity=".95"/>
-    <path d="M20 -30 q 16 -8 21 3 q -12 1 -19 7 z" fill="var(--dragon-2)" opacity=".95"/>
+  return `<g transform="translate(${x},${y}) scale(${s})" stroke="var(--dragon-ink)" stroke-width="1.2" stroke-linejoin="round">
+    <ellipse cx="0" cy="4" rx="24" ry="6" fill="rgba(50,45,35,.12)" stroke="none"/>
+    <path d="M16 -12 q 24 4 20 24 q -3 9 -10 6 q 7 -6 1 -15 q -6 -7 -17 -5 z" fill="var(--dragon)" stroke="none"/>
+    <path d="M-20 -30 q -16 -8 -21 3 q 12 1 19 7 z" fill="var(--dragon-2)" stroke="none" opacity=".95"/>
+    <path d="M20 -30 q 16 -8 21 3 q -12 1 -19 7 z" fill="var(--dragon-2)" stroke="none" opacity=".95"/>
     <ellipse cx="0" cy="-16" rx="19" ry="17" fill="var(--dragon)"/>
-    <ellipse cx="0" cy="-12" rx="11" ry="11" fill="var(--dragon-2)"/>
+    <ellipse cx="0" cy="-12" rx="11" ry="11" fill="var(--dragon-2)" stroke="none"/>
     <ellipse cx="-9" cy="-2" rx="7" ry="5.5" fill="var(--dragon)"/>
     <ellipse cx="9" cy="-2" rx="7" ry="5.5" fill="var(--dragon)"/>
     <ellipse cx="-18" cy="-16" rx="5.5" ry="8" fill="var(--dragon)" transform="rotate(20 -18 -16)"/>
     <ellipse cx="18" cy="-16" rx="5.5" ry="8" fill="var(--dragon)" transform="rotate(-20 18 -16)"/>
     <circle cx="0" cy="-42" r="27" fill="var(--dragon)"/>
-    <path d="M-9 -66 q1 -9 6 -11 q-1 8 4 12 z" fill="var(--dragon-ink)" opacity=".45"/>
-    <path d="M9 -66 q-1 -9 -6 -11 q1 8 -4 12 z" fill="var(--dragon-ink)" opacity=".45"/>
-    <circle cx="-9.5" cy="-43" r="7" fill="#fff"/>
-    <circle cx="9.5" cy="-43" r="7" fill="#fff"/>
-    <circle cx="-8" cy="-42" r="4.8" fill="var(--dragon-ink)"/>
-    <circle cx="11" cy="-42" r="4.8" fill="var(--dragon-ink)"/>
-    <circle cx="-10" cy="-44.5" r="2" fill="#fff"/>
-    <circle cx="9" cy="-44.5" r="2" fill="#fff"/>
-    <ellipse cx="-16" cy="-33" rx="4.5" ry="3" fill="var(--petal)" opacity=".6"/>
-    <ellipse cx="16" cy="-33" rx="4.5" ry="3" fill="var(--petal)" opacity=".6"/>
-    <path d="M-4 -32 q4 4.5 8 0" fill="none" stroke="var(--dragon-ink)" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M-9 -66 q1 -9 6 -11 q-1 8 4 12 z" fill="var(--dragon-ink)" stroke="none" opacity=".5"/>
+    <path d="M9 -66 q-1 -9 -6 -11 q1 8 -4 12 z" fill="var(--dragon-ink)" stroke="none" opacity=".5"/>
+    <circle cx="-9.5" cy="-43" r="6.6" fill="#fbf9f2" stroke="none"/>
+    <circle cx="9.5" cy="-43" r="6.6" fill="#fbf9f2" stroke="none"/>
+    <circle cx="-8" cy="-42" r="4.6" fill="var(--dragon-ink)" stroke="none"/>
+    <circle cx="11" cy="-42" r="4.6" fill="var(--dragon-ink)" stroke="none"/>
+    <circle cx="-10" cy="-44.4" r="1.9" fill="#fff" stroke="none"/>
+    <circle cx="9" cy="-44.4" r="1.9" fill="#fff" stroke="none"/>
+    <ellipse cx="-16" cy="-33" rx="4.4" ry="3" fill="var(--petal)" stroke="none" opacity=".55"/>
+    <ellipse cx="16" cy="-33" rx="4.4" ry="3" fill="var(--petal)" stroke="none" opacity=".55"/>
+    <path d="M-4 -32 q4 4.5 8 0" fill="none" stroke-width="1.3" stroke-linecap="round"/>
   </g>`;
 }
 
-/* ---------- scenery ---------- */
-const STARS=[[120,70,1.6],[180,120,1.2],[248,60,1.8],[520,50,1.3],[560,112,1.6],[700,140,1.2],[92,152,1.3],[352,90,1.4],[624,64,1.2],[470,124,1.5],[300,150,1.2],[660,196,1.3]];
-const SNOW=[[100,80,2.6],[160,160,2],[240,120,2.9],[322,60,2],[402,180,2.4],[482,100,3],[560,150,2],[640,90,2.7],[700,206,2.2],[140,240,2],[300,224,2.7],[520,244,2],[600,282,2.3],[220,300,2],[420,300,2.6],[684,304,2]];
-const PETALS=[[122,90,18],[224,150,-24],[344,80,10],[560,120,-14],[600,70,28],[684,150,-8],[160,232,14],[300,262,-30],[640,232,20],[520,60,-12],[210,110,-18],[700,90,22]];
-const LEAVES=[[130,110],[252,90],[560,110],[642,90],[700,164],[182,224],[600,232],[458,70],[520,150],[300,70]];
-const FLOWERS=[[150,406],[210,414],[600,406],[662,412],[520,417],[96,410]];
+/* ---------- washes & motifs ---------- */
+const STARS=[[130,72,1.5],[196,120,1.1],[250,64,1.6],[520,58,1.2],[556,110,1.5],[660,150,1.1],[110,150,1.2],[356,96,1.3],[610,72,1.1],[470,128,1.4]];
+const SNOW=[[120,90,2.4],[180,150,1.8],[250,120,2.6],[330,74,1.9],[410,170,2.2],[486,104,2.7],[560,150,1.9],[636,96,2.4],[690,196,2],[160,230,1.8],[310,224,2.4],[540,236,1.9],[600,280,2.1],[240,290,1.8],[430,292,2.3]];
+const PETALS=[[140,96,18],[236,150,-24],[350,82,10],[556,120,-14],[606,74,26],[680,150,-8],[176,230,14],[314,258,-30],[640,232,20],[520,64,-12]];
+const LEAVES=[[140,112],[256,92],[560,112],[642,92],[690,164],[190,224],[600,232],[458,74],[520,152]];
+const FLOWERS=[[160,398],[214,406],[590,398],[648,404],[520,408]];
 
-function stars(){return STARS.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--star)" opacity=".85"/>`).join('');}
-function sun(){return `<circle cx="636" cy="90" r="74" fill="var(--sun)" opacity=".14"/><circle cx="636" cy="90" r="42" fill="var(--sun)" opacity=".5"/>`;}
-function moon(){return `<circle cx="648" cy="86" r="34" fill="var(--moon)" opacity=".95"/><circle cx="634" cy="80" r="30" fill="var(--s-top)" opacity=".9"/>`;}
-function snow(){return SNOW.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--snow)" opacity=".85"/>`).join('');}
-function petals(){return PETALS.map(([x,y,a])=>`<ellipse cx="${x}" cy="${y}" rx="5" ry="3" fill="var(--petal)" opacity=".8" transform="rotate(${a} ${x} ${y})"/>`).join('');}
-function rain(){let s='';for(let i=0;i<16;i++){const x=60+i*46+(i%2?12:0),y=54+(i%3)*40;s+=`<line x1="${x}" y1="${y}" x2="${x-9}" y2="${y+24}" stroke="var(--rain)" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>`;}return s;}
-function leaves(){const c=['var(--leaf-a)','var(--leaf-b)','var(--leaf-c)'];return LEAVES.map(([x,y],i)=>`<ellipse cx="${x}" cy="${y}" rx="6" ry="3.4" fill="${c[i%3]}" opacity=".85" transform="rotate(${(i*47)%360} ${x} ${y})"/>`).join('');}
-function flowers(){return FLOWERS.map(([x,y],i)=>{const c=i%2?'var(--flower2)':'var(--flower)';return `<g opacity=".85"><circle cx="${x}" cy="${y-6}" r="2.4" fill="${c}"/><circle cx="${x-3}" cy="${y-3}" r="2.4" fill="${c}"/><circle cx="${x+3}" cy="${y-3}" r="2.4" fill="${c}"/><circle cx="${x}" cy="${y}" r="1.6" fill="var(--sun)"/></g>`;}).join('');}
+function wash(cx,cy,rx,ry,fill,op){return `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${fill}" opacity="${op}" filter="url(#soft)"/>`;}
+function stars(){return STARS.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--star)" opacity=".8"/>`).join('');}
+function sun(){return wash(628,96,58,58,'var(--sun)',.2)+`<circle cx="628" cy="96" r="34" fill="var(--sun)" opacity=".42"/>`;}
+function moon(){return `<circle cx="636" cy="90" r="30" fill="var(--moon)" opacity=".95"/><circle cx="624" cy="84" r="27" fill="var(--s-a)" opacity=".92"/>`;}
+function snow(){return SNOW.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--snow)" opacity=".9"/>`).join('');}
+function petals(){return PETALS.map(([x,y,a])=>`<ellipse cx="${x}" cy="${y}" rx="4.5" ry="2.7" fill="var(--petal)" opacity=".8" transform="rotate(${a} ${x} ${y})"/>`).join('');}
+function rain(){let s='';for(let i=0;i<14;i++){const x=90+i*44+(i%2?10:0),y=64+(i%3)*36;s+=`<line x1="${x}" y1="${y}" x2="${x-8}" y2="${y+22}" stroke="var(--rain)" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>`;}return s;}
+function leaves(){const c=['var(--leaf-a)','var(--leaf-b)','var(--leaf-c)'];return LEAVES.map(([x,y],i)=>`<ellipse cx="${x}" cy="${y}" rx="5.5" ry="3.2" fill="${c[i%3]}" opacity=".85" transform="rotate(${(i*53)%360} ${x} ${y})"/>`).join('');}
+function flowers(){return FLOWERS.map(([x,y],i)=>{const c=i%2?'var(--flower2)':'var(--flower)';return `<g opacity=".8"><circle cx="${x}" cy="${y-5}" r="2.2" fill="${c}"/><circle cx="${x-3}" cy="${y-2}" r="2.2" fill="${c}"/><circle cx="${x+3}" cy="${y-2}" r="2.2" fill="${c}"/><circle cx="${x}" cy="${y+1}" r="1.4" fill="var(--sun)"/></g>`;}).join('');}
 function tree(kind){
   let dots='';
-  if(kind==='blossom'){const p=[[74,150],[58,168],[92,166],[70,188],[104,150],[50,144],[112,178]];dots=p.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="var(--petal)" opacity=".85"/>`).join('');}
-  if(kind==='autumn'){const p=[[74,150],[58,168],[92,166],[104,150],[50,146],[112,180],[70,190]];const c=['var(--leaf-a)','var(--leaf-b)','var(--leaf-c)'];dots=p.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="5" fill="${c[i%3]}" opacity=".85"/>`).join('');}
-  return `<g>
-    <path d="M80 300 L80 168" stroke="var(--dragon-ink)" stroke-width="7" stroke-linecap="round" opacity=".4"/>
-    <path d="M80 210 q -22 -14 -34 -30 M80 196 q 22 -12 34 -30 M80 182 q -14 -12 -22 -26" stroke="var(--dragon-ink)" stroke-width="4.5" fill="none" stroke-linecap="round" opacity=".4"/>
-    ${dots}
-  </g>`;
+  if(kind==='blossom'){const p=[[88,150],[72,168],[106,166],[84,188],[118,150],[64,144],[126,178]];dots=p.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="var(--petal)" opacity=".8"/>`).join('');}
+  if(kind==='autumn'){const p=[[88,150],[72,168],[106,166],[118,150],[64,146],[126,180],[84,190]];const c=['var(--leaf-a)','var(--leaf-b)','var(--leaf-c)'];dots=p.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="5" fill="${c[i%3]}" opacity=".82"/>`).join('');}
+  return `<g stroke="var(--dragon-ink)" opacity=".42" fill="none" stroke-linecap="round">
+    <path d="M94 300 L94 168" stroke-width="6"/>
+    <path d="M94 210 q -22 -14 -34 -30 M94 196 q 22 -12 34 -30 M94 182 q -14 -12 -22 -26" stroke-width="4"/>
+  </g>${dots}`;
 }
-
-/* ---------- page-specific props ---------- */
-function bag(x,y){return `<g transform="translate(${x},${y})">
-  <ellipse cx="0" cy="22" rx="26" ry="6" fill="rgba(40,36,28,.10)"/>
-  <path d="M-22 -4 q0 -14 22 -14 q22 0 22 14 l0 20 q0 6 -6 6 l-32 0 q-6 0 -6 -6 z" fill="var(--leaf-b)"/>
-  <path d="M-22 0 q22 11 44 0 l0 6 q-22 11 -44 0 z" fill="var(--leaf-a)" opacity=".85"/>
-  <path d="M-15 -6 q15 -13 30 0" fill="none" stroke="var(--leaf-a)" stroke-width="3"/>
+function bag(x,y){return `<g transform="translate(${x},${y})" stroke="var(--panda-ink)" stroke-width="1" stroke-linejoin="round">
+  <ellipse cx="0" cy="22" rx="24" ry="5" fill="rgba(50,45,35,.12)" stroke="none"/>
+  <path d="M-21 -4 q0 -13 21 -13 q21 0 21 13 l0 19 q0 6 -6 6 l-30 0 q-6 0 -6 -6 z" fill="var(--leaf-b)"/>
+  <path d="M-21 0 q21 10 42 0 l0 6 q-21 10 -42 0 z" fill="var(--leaf-a)" stroke="none" opacity=".85"/>
+  <path d="M-14 -6 q14 -12 28 0" fill="none" stroke="var(--leaf-a)" stroke-width="2.5"/>
 </g>`;}
-function cardHeld(x,y){return `<g transform="translate(${x},${y}) rotate(-6)">
-  <circle cx="6" cy="6" r="34" fill="var(--sun)" opacity=".18"/>
-  <rect x="-18" y="-13" width="46" height="34" rx="4" fill="var(--panda)" stroke="var(--panda-line)" stroke-width="1.5"/>
-  <path d="M-18 -9 l23 15 l23 -15" fill="none" stroke="var(--panda-line)" stroke-width="1.5"/>
-  ${heart(5,4,1.3,'var(--petal)')}
+function badge(x,y){return `<g transform="translate(${x},${y}) rotate(-9)">
+  <ellipse cx="3" cy="30" rx="26" ry="5" fill="rgba(50,45,35,.12)"/>
+  <path d="M-9 -22 C -33 -40 -30 -8 -11 -17" fill="none" stroke="#4f7d54" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <path d="M3 -22 C 27 -40 24 -8 5 -17" fill="none" stroke="#4f7d54" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <rect x="-5" y="-24" width="10" height="7" rx="1.5" fill="#9a9482"/>
+  <rect x="-18" y="-18" width="36" height="48" rx="3" fill="#fbf9f2" stroke="var(--panda-line)" stroke-width="1.2"/>
+  <path d="M-18 -15 q0 -3 3 -3 h30 q3 0 3 3 v9 h-36 z" fill="#4f8a3e"/>
+  <text x="0" y="-8.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="6.4" fill="#fff" letter-spacing=".2">Deloitte</text>
+  <circle cx="12.3" cy="-10.4" r="1.05" fill="#8ec63f"/>
+  <circle cx="-8" cy="5" r="6.5" fill="#dfe4d2" stroke="var(--panda-line)" stroke-width=".7"/>
+  <path d="M-8 2 a2.4 2.4 0 1 1 .01 0 M-12 9 q4 -4 8 0" fill="none" stroke="#b7b2a2" stroke-width="1"/>
+  <rect x="2" y="1" width="14" height="2.4" rx="1.2" fill="#b9b3a2"/>
+  <rect x="2" y="6" width="10" height="2.2" rx="1.1" fill="#cec8b8"/>
+  <rect x="-13" y="17" width="26" height="8" rx="1.5" fill="#efece0"/>
+  <g fill="#7a7568"><rect x="-11" y="19" width="1" height="4"/><rect x="-8.5" y="19" width="1.6" height="4"/><rect x="-5.5" y="19" width="1" height="4"/><rect x="-3" y="19" width="2" height="4"/><rect x="1" y="19" width="1" height="4"/><rect x="4" y="19" width="1.6" height="4"/><rect x="7" y="19" width="1" height="4"/><rect x="9.5" y="19" width="1.4" height="4"/></g>
 </g>`;}
-function footprints(){const pts=[[398,450],[418,432],[400,414],[418,394],[402,374],[418,354],[404,336]];return pts.map(([x,y])=>`<ellipse cx="${x}" cy="${y}" rx="4" ry="5" fill="var(--ink-soft)" opacity=".26"/>`).join('');}
-function lantern(x,y){return `<g transform="translate(${x},${y})">
-  <circle cx="0" cy="4" r="30" fill="var(--sun)" opacity=".28"/>
-  <line x1="0" y1="-22" x2="0" y2="-9" stroke="var(--panda-ink)" stroke-width="2"/>
-  <rect x="-9" y="-9" width="18" height="22" rx="5" fill="var(--sun)" stroke="var(--panda-ink)" stroke-width="1.5"/>
+function cardHeld(x,y){return `<g transform="translate(${x},${y}) rotate(-6)" stroke="var(--panda-line)" stroke-width="1.2" stroke-linejoin="round">
+  ${wash(6,6,30,30,'var(--sun)',.16)}
+  <rect x="-17" y="-12" width="44" height="32" rx="2" fill="var(--panda)"/>
+  <path d="M-17 -8 l22 14 l22 -14" fill="none"/>
+  ${heart(5,4,1.2,'var(--petal)')}
 </g>`;}
-function coffee(){const cup=(x,y,sc)=>`<g transform="translate(${x},${y}) scale(${sc})">
-    <path d="M-6 -18 q0 -8 3 -12 M2 -20 q0 -8 3 -12" stroke="var(--steam)" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/>
-    <path d="M-11 -6 h22 l-3 18 q-1 4 -5 4 h-6 q-4 0 -5 -4 z" fill="var(--panda)" stroke="var(--panda-line)" stroke-width="1.5"/>
-    <path d="M11 -2 q7 0 6 8 q-1 6 -7 6" fill="none" stroke="var(--panda-line)" stroke-width="2"/>
-    <path d="M-9 -6 h18 l-1 6 h-16 z" fill="var(--accent)" opacity=".7"/>
-  </g>`;return cup(150,412,1.1)+cup(182,420,.92);}
-function speech(x,y,text){const w=text.length*20+26;return `<g>
-  <rect x="${x-w/2}" y="${y-19}" width="${w}" height="34" rx="17" fill="var(--panda)" stroke="var(--panda-line)" stroke-width="1.5"/>
-  <path d="M${x-4} ${y+13} l-2 13 l14 -11 z" fill="var(--panda)" stroke="var(--panda-line)" stroke-width="1.5"/>
-  <text x="${x}" y="${y+3}" text-anchor="middle" font-family="'Noto Serif TC',serif" font-weight="500" font-size="18" fill="var(--ink)">${text}</text>
+function footprints(){const pts=[[400,412],[418,394],[402,376],[418,358],[404,340],[418,322]];return pts.map(([x,y])=>`<ellipse cx="${x}" cy="${y}" rx="3.6" ry="4.6" fill="var(--ink-soft)" opacity=".24"/>`).join('');}
+function lantern(x,y){return `<g transform="translate(${x},${y})" stroke="var(--panda-ink)" stroke-width="1.3">
+  ${wash(0,4,26,26,'var(--sun)',.24)}
+  <line x1="0" y1="-22" x2="0" y2="-9"/>
+  <rect x="-8" y="-9" width="16" height="20" rx="4" fill="var(--sun)"/>
+</g>`;}
+function coffee(){const cup=(x,y,sc)=>`<g transform="translate(${x},${y}) scale(${sc})" stroke="var(--panda-line)" stroke-width="1.3" stroke-linejoin="round">
+    <path d="M-6 -18 q0 -8 3 -12 M2 -20 q0 -8 3 -12" stroke="var(--steam)" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".7"/>
+    <path d="M-11 -6 h22 l-3 18 q-1 4 -5 4 h-6 q-4 0 -5 -4 z" fill="var(--panda)"/>
+    <path d="M11 -2 q7 0 6 8 q-1 6 -7 6" fill="none" stroke-width="1.8"/>
+    <path d="M-9 -6 h18 l-1 6 h-16 z" fill="var(--dragon)" stroke="none" opacity=".65"/>
+  </g>`;return cup(158,404,1.05)+cup(190,412,.9);}
+function holdCoffee(px,py,dx,dy){
+  const mug=(x,y,sc)=>`<g transform="translate(${x},${y}) scale(${sc})" stroke="var(--panda-line)" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M-6 -18 q0 -9 3 -13 M2 -20 q0 -9 3 -13" stroke="var(--steam)" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/>
+    <path d="M-11 -6 h22 l-3 19 q-1 5 -6 5 h-6 q-5 0 -6 -5 z" fill="var(--panda)"/>
+    <path d="M11 -1 q8 0 7 9 q-1 7 -8 6" fill="none" stroke-width="2"/>
+    <ellipse cx="0" cy="-6" rx="11" ry="3.4" fill="#7c5636" stroke="none"/>
+  </g>`;
+  const cx=(px+dx)/2, cy=(py+dy)/2;
+  return wash(cx,cy-32,150,84,'var(--sun)',.16)+mug(px,py-33,.82)+mug(dx,dy-14,.64)+heart(cx,cy-72,1.2,'var(--petal)',.72);
+}
+function laptop(x,y){return `<g transform="translate(${x},${y})" stroke="var(--panda-line)" stroke-width="1.2" stroke-linejoin="round">
+  <ellipse cx="1" cy="13" rx="24" ry="4" fill="rgba(50,45,35,.12)" stroke="none"/>
+  <path d="M-19 9 l34 0 l7 5 l-46 0 z" fill="#d6d0c1"/>
+  <path d="M-16 9 l30 0 l5 4 l-40 0 z" fill="#bdb7a8" stroke="none"/>
+  <g transform="translate(-2,0) skewX(-5)"><rect x="-15" y="-16" width="30" height="25" rx="2" fill="#3b4045"/><rect x="-12" y="-13" width="24" height="19" rx="1" fill="#8fb0a0"/><rect x="-9" y="-10" width="14" height="2" rx="1" fill="#e7efe9" opacity=".8"/><rect x="-9" y="-5" width="18" height="2" rx="1" fill="#cfe0d6" opacity=".7"/><rect x="-9" y="0" width="10" height="2" rx="1" fill="#cfe0d6" opacity=".7"/></g>
 </g>`;}
 function giftFlower(x,y){return `<g transform="translate(${x},${y})">
-  <line x1="0" y1="2" x2="0" y2="16" stroke="var(--accent)" stroke-width="2"/>
-  ${[[0,-5],[-5,-1],[5,-1],[-3,4],[3,4]].map(([dx,dy])=>`<circle cx="${dx}" cy="${dy}" r="3.4" fill="var(--flower)"/>`).join('')}
-  <circle cx="0" cy="0" r="2.4" fill="var(--sun)"/>
+  <line x1="0" y1="2" x2="0" y2="15" stroke="var(--dragon)" stroke-width="2"/>
+  ${[[0,-5],[-5,-1],[5,-1],[-3,4],[3,4]].map(([dx,dy])=>`<circle cx="${dx}" cy="${dy}" r="3.2" fill="var(--flower)"/>`).join('')}
+  <circle cx="0" cy="0" r="2.2" fill="var(--sun)"/>
 </g>`;}
-function sparkles(list){return list.map(([x,y,r])=>sparkle(x,y,r||6,'var(--sun)')).join('');}
-function threeStars(x,y){return sparkle(x-30,y+6,6)+sparkle(x,y-6,8)+sparkle(x+30,y+6,6);}
-function streamStones(){return `<path d="M0 402 Q 200 392 400 400 T 800 398 L800 432 Q 600 424 400 430 T 0 432 Z" fill="var(--stream)" opacity=".55"/>
-  <ellipse cx="360" cy="416" rx="20" ry="8" fill="var(--path)"/>
-  <ellipse cx="410" cy="410" rx="18" ry="7" fill="var(--path)"/>
-  <ellipse cx="458" cy="416" rx="20" ry="8" fill="var(--path)"/>`;}
-function car(x,y){return `<g transform="translate(${x},${y})">
-  <ellipse cx="0" cy="28" rx="72" ry="9" fill="rgba(40,36,28,.10)"/>
-  <path d="M-62 12 q3 -24 22 -28 q10 -10 26 -10 q24 0 36 22 l16 4 q10 3 10 13 l0 6 q0 5 -6 5 l-108 0 q-6 0 -6 -6 z" fill="var(--accent)"/>
-  <path d="M-30 -14 q6 -12 18 -13 l0 20 l-20 0 z" fill="var(--panda)" opacity=".9"/>
-  <path d="M4 -15 q15 1 24 15 l-24 0 z" fill="var(--panda)" opacity=".9"/>
-  <circle cx="-34" cy="22" r="12" fill="var(--panda-ink)"/><circle cx="-34" cy="22" r="5" fill="var(--panda)"/>
-  <circle cx="34" cy="22" r="12" fill="var(--panda-ink)"/><circle cx="34" cy="22" r="5" fill="var(--panda)"/>
-  <circle cx="58" cy="4" r="4" fill="var(--sun)"/>
+function sparkles(list){return list.map(([x,y,r])=>spark(x,y,r||5,'var(--sun)')).join('');}
+function threeStars(x,y){return spark(x-28,y+6,5)+spark(x,y-6,7)+spark(x+28,y+6,5);}
+function streamStones(){return wash(400,414,340,26,'var(--stream)',.5)+`
+  <ellipse cx="358" cy="416" rx="19" ry="7" fill="var(--path)"/>
+  <ellipse cx="408" cy="410" rx="17" ry="6.5" fill="var(--path)"/>
+  <ellipse cx="456" cy="416" rx="19" ry="7" fill="var(--path)"/>`;}
+function car(x,y){return `<g transform="translate(${x},${y})" stroke-linejoin="round">
+  <ellipse cx="0" cy="27" rx="70" ry="8" fill="rgba(50,45,35,.12)"/>
+  <path d="M-63 13 q1 -13 12 -17 q5 -17 20 -18 l30 0 q16 1 21 18 q11 2 17 6 q8 3 8 12 l0 5 q0 6 -6 6 l-119 0 q-6 0 -6 -6 z" fill="#c53a2b" stroke="#8c2318" stroke-width="1.5"/>
+  <path d="M-30 -20 q4 -12 16 -12 l22 0 q13 1 17 15 l-55 0 z" fill="#f1ece0" stroke="#8c2318" stroke-width="1.3"/>
+  <path d="M-26 -5 q3 -10 12 -11 l7 0 l0 15 l-21 0 z" fill="#c3d4d6" stroke="#8c2318" stroke-width=".9"/>
+  <path d="M3 -16 l5 0 q10 1 13 12 l0 3 l-18 0 z" fill="#c3d4d6" stroke="#8c2318" stroke-width=".9"/>
+  <path d="M-61 12 l122 0 l0 5 q0 5 -6 5 l-110 0 q-6 0 -6 -5 z" fill="#322e2a"/>
+  <rect x="-52" y="6" width="8" height="4" rx="2" fill="#f1ece0" opacity=".85"/>
+  <circle cx="55" cy="2" r="5" fill="#ffe3a0" stroke="#8c2318" stroke-width="1"/>
+  <circle cx="-34" cy="20" r="12.5" fill="#2b2825"/><circle cx="-34" cy="20" r="5" fill="#d0cabb"/>
+  <circle cx="34" cy="20" r="12.5" fill="#2b2825"/><circle cx="34" cy="20" r="5" fill="#d0cabb"/>
 </g>`;}
-function umbrella(x,y){return `<g transform="translate(${x},${y})">
-  <path d="M-60 0 a60 60 0 0 1 120 0 z" fill="var(--petal)"/>
-  <path d="M-60 0 q15 12 30 0 q15 12 30 0 q15 12 30 0 q15 12 30 0" fill="var(--petal)"/>
-  <path d="M-60 0 a60 60 0 0 1 120 0" fill="none" stroke="var(--dragon-ink)" stroke-width="1" opacity=".18"/>
-  <line x1="0" y1="0" x2="0" y2="96" stroke="var(--panda-ink)" stroke-width="3"/>
-  <path d="M0 96 q0 9 -9 9" fill="none" stroke="var(--panda-ink)" stroke-width="3"/>
+function umbrella(x,y){return `<g transform="translate(${x},${y})" stroke="var(--panda-ink)" stroke-width="1.2">
+  <path d="M-58 0 a58 58 0 0 1 116 0 z" fill="var(--petal)" stroke="none"/>
+  <path d="M-58 0 q15 11 29 0 q15 11 29 0 q15 11 29 0 q15 11 29 0" fill="var(--petal)" stroke="none"/>
+  <line x1="0" y1="0" x2="0" y2="92" stroke-width="2.6"/>
+  <path d="M0 92 q0 9 -9 9" fill="none" stroke-width="2.6"/>
 </g>`;}
 function phone(x,y){return `<g transform="translate(${x},${y})">
-  <circle cx="0" cy="0" r="26" fill="var(--sun)" opacity=".16"/>
-  <rect x="-15" y="-26" width="30" height="52" rx="7" fill="var(--panda-ink)"/>
-  <rect x="-12" y="-22" width="24" height="44" rx="4" fill="var(--panda)"/>
-  ${heart(0,-6,1.5,'var(--petal)')}
+  ${wash(0,0,24,24,'var(--sun)',.16)}
+  <rect x="-14" y="-25" width="28" height="50" rx="6" fill="var(--panda-ink)"/>
+  <rect x="-11" y="-21" width="22" height="42" rx="3" fill="var(--panda)"/>
+  ${heart(0,-6,1.4,'var(--petal)')}
 </g>`;}
-function musicNote(x,y){return `<g fill="var(--accent)">
-  <rect x="${x+5}" y="${y-16}" width="3" height="30"/>
-  <path d="M${x+8} ${y-16} q11 1 9 12 q-1 -7 -9 -6 z"/>
-  <ellipse cx="${x}" cy="${y+16}" rx="7" ry="5" transform="rotate(-18 ${x} ${y+16})"/>
+function musicNote(x,y){return `<g fill="var(--dragon-ink)" opacity=".7">
+  <rect x="${x+5}" y="${y-16}" width="2.6" height="28"/>
+  <path d="M${x+7.6} ${y-16} q10 1 8 11 q-1 -6 -8 -5 z"/>
+  <ellipse cx="${x}" cy="${y+14}" rx="6.5" ry="4.6" transform="rotate(-18 ${x} ${y+14})"/>
 </g>`;}
-function shootingStar(){return `<g><line x1="540" y1="66" x2="628" y2="34" stroke="var(--star)" stroke-width="2" stroke-linecap="round" opacity=".55"/>${sparkle(636,30,5,'var(--moon)')}</g>`;}
-function hearts(list){return list.map(([x,y,s])=>heart(x,y,s||1.4,'var(--petal)',.85)).join('');}
+function shootingStar(){return `<line x1="530" y1="70" x2="616" y2="38" stroke="var(--star)" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>${spark(624,34,4,'var(--moon)')}`;}
+function rainbow(){const cols=['#dca59c','#e0bd85','#c6cd93','#9dbdac','#a6b0cb'];let s='';cols.forEach((c,i)=>{const r=182-i*9;s+=`<path d="M ${400-r} 214 A ${r} ${r} 0 0 1 ${400+r} 214" fill="none" stroke="${c}" stroke-width="7" opacity=".4" stroke-linecap="round"/>`;});return s;}
+function hearts(list){return list.map(([x,y,s])=>heart(x,y,s||1.4,'var(--petal)',.82)).join('');}
 
-function buildScene(p){
-  const sky=`--s-top:var(--sky-${p.season}-top);--s-bot:var(--sky-${p.season}-bot)`;
-  const gid='g'+p.i;
-  let m='';
+/* ---------- plate (framed painting on paper) ---------- */
+function buildPlate(p){
+  const sky=`--s-a:var(--sky-${p.season}-a);--s-b:var(--sky-${p.season}-b)`;
+  const gid='g'+p.i, cid='c'+p.i;
   const has=n=>p.motifs&&p.motifs.includes(n);
   const prop=n=>p.props&&p.props.includes(n);
-  if(has('sun')) m+=sun();
-  if(has('moon')) m+=moon();
-  if(has('stars')) m+=stars();
-  if(prop('shootingStar')) m+=shootingStar();
-  m+=`<path d="M0 328 Q 200 300 400 322 T 800 320 L800 460 L0 460 Z" fill="var(--hill-2)"/>`;
-  m+=`<path d="M0 380 Q 250 350 480 378 T 800 372 L800 460 L0 460 Z" fill="var(--hill-1)"/>`;
-  if(p.path!==false) m+=`<path d="M334 460 L466 460 Q 450 384 430 342 Q 419 316 411 302 L 393 302 Q 381 330 368 360 Q 348 412 334 460 Z" fill="var(--path)" opacity=".72"/>`;
-  if(has('tree-bare')) m+=tree('bare');
-  if(has('tree-blossom')) m+=tree('blossom');
-  if(has('tree-autumn')) m+=tree('autumn');
-  if(has('flowers')) m+=flowers();
-  if(prop('footprints')) m+=footprints();
-  if(prop('stream')) m+=streamStones();
-  // background props
-  if(prop('bag')) m+=bag(238,404);
-  if(prop('car')) m+=car(232,398);
-  // characters
-  const px=p.panda?p.panda[0]:318, py=p.panda?p.panda[1]:406, ps=p.panda?p.panda[2]:1.02;
-  m+=panda(px,py,ps);
-  if(!p.solo){const dx=p.dragon?p.dragon[0]:440, dy=p.dragon?p.dragon[1]:412, ds=p.dragon?p.dragon[2]:1.18; m+=dragon(dx,dy,ds);}
-  // foreground props
-  if(prop('cardHeld')) m+=cardHeld(px+2,py-92);
-  if(prop('lantern')) m+=lantern(398,398);
-  if(prop('coffee')) m+=coffee();
-  if(prop('gift')) m+=giftFlower(398,398);
-  if(prop('umbrella')) m+=umbrella(378,296);
-  if(prop('phone')) m+=phone(474,392);
-  if(prop('musicNote')) m+=musicNote(516,300);
-  if(prop('threeStars')) m+=threeStars(440,292);
-  if(prop('sparkles')) m+=sparkles([[470,300,7],[300,120,6],[520,150,5],[250,250,5],[560,260,6]]);
-  if(prop('hearts')) m+=hearts(p.heartsAt||[[380,300,1.6],[350,260,1.1],[410,255,1.2]]);
-  if(p.say) m+=speech(p.sayAt?p.sayAt[0]:470, p.sayAt?p.sayAt[1]:300, p.say);
-  if(has('snow')) m+=snow();
-  if(has('petals')) m+=petals();
-  if(has('rain')) m+=rain();
-  if(has('leaves')) m+=leaves();
-  return `<svg class="scene" viewBox="0 0 800 460" role="img" style="${sky}" preserveAspectRatio="xMidYMid slice">
-    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--s-top)"/><stop offset="1" stop-color="var(--s-bot)"/></linearGradient></defs>
-    <rect width="800" height="460" fill="url(#${gid})"/>${m}</svg>`;
+  let back='', ground='', over='';
+  if(has('sun')) back+=sun();
+  if(has('moon')) back+=moon();
+  if(has('stars')) back+=stars();
+  if(prop('shootingStar')) back+=shootingStar();
+  if(prop('rainbow')) back+=rainbow();
+  ground+=wash(400,300,470,150,'var(--hill-2)',.6);
+  ground+=wash(400,360,520,120,'var(--hill-1)',.7);
+  if(p.path!==false) ground+=`<path d="M356 400 L444 400 Q 432 350 416 320 L 384 320 Q 368 350 356 400 Z" fill="var(--path)" opacity=".55" filter="url(#soft)"/>`;
+  if(has('tree-bare')) ground+=tree('bare');
+  if(has('tree-blossom')) ground+=tree('blossom');
+  if(has('tree-autumn')) ground+=tree('autumn');
+  if(has('flowers')) ground+=flowers();
+  if(prop('footprints')) ground+=footprints();
+  if(prop('stream')) ground+=streamStones();
+  if(prop('bag')) ground+=bag(250,404);
+  if(prop('badge')) ground+=badge(252,398);
+  if(prop('car')) ground+=car(250,398);
+  if(prop('laptop')) ground+=laptop(250,402);
+  const px=p.panda?p.panda[0]:322, py=p.panda?p.panda[1]:404, ps=p.panda?p.panda[2]:1.0;
+  const dx=p.dragon?p.dragon[0]:436, dy=p.dragon?p.dragon[1]:410, ds=p.dragon?p.dragon[2]:1.16;
+  let chars=panda(px,py,ps);
+  if(!p.solo){chars+=dragon(dx,dy,ds);}
+  if(prop('cardHeld')) over+=cardHeld(px+2,py-92);
+  if(prop('lantern')) over+=lantern(402,398);
+  if(prop('coffee')) over+=coffee();
+  if(prop('holdCoffee')) over+=holdCoffee(px,py,dx,dy);
+  if(prop('gift')) over+=giftFlower(400,398);
+  if(prop('umbrella')) over+=umbrella(378,300);
+  if(prop('phone')) over+=phone(474,392);
+  if(prop('musicNote')) over+=musicNote(512,300);
+  if(prop('threeStars')) over+=threeStars(436,292);
+  if(prop('sparkles')) over+=sparkles([[470,300,6],[300,120,5],[520,150,4.5],[560,250,5]]);
+  if(prop('hearts')) over+=hearts(p.heartsAt||[[380,300,1.5],[350,262,1],[410,258,1.1]]);
+  if(has('snow')) over+=snow();
+  if(has('petals')) over+=petals();
+  if(has('rain')) over+=rain();
+  if(has('leaves')) over+=leaves();
+  return `<svg class="scene" viewBox="0 0 800 450" role="img" style="${sky}" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--s-a)"/><stop offset="1" stop-color="var(--s-b)"/></linearGradient>
+      <filter id="soft"><feGaussianBlur stdDeviation="3.2"/></filter>
+      <filter id="wc${p.i}" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.014 0.017" numOctaves="3" seed="${7+p.i}" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+      <filter id="grain${p.i}"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .05 0"/></filter>
+      <clipPath id="${cid}"><rect x="46" y="26" width="708" height="392" rx="4"/></clipPath>
+    </defs>
+    <g filter="url(#wc${p.i})">
+      <rect x="46" y="26" width="708" height="392" rx="4" fill="url(#${gid})"/>
+      <g clip-path="url(#${cid})">${back}${ground}${chars}${over}</g>
+    </g>
+    <rect x="46" y="26" width="708" height="392" rx="4" fill="none" stroke="var(--edge)" stroke-width="1" opacity=".6"/>
+    <rect x="46" y="26" width="708" height="392" filter="url(#grain${p.i})" opacity=".5" clip-path="url(#${cid})"/>
+  </svg>`;
 }
 
-/* ---------- the story ---------- */
+/* ---------- pages ---------- */
 const PAGES=[
-  {cover:true,season:'dawn',motifs:['sun'],props:['hearts'],heartsAt:[[379,300,1.4]],panda:[338,408,.98],dragon:[452,414,1.06],
-   kicker:'2022.09 — 2026.09',title:'給小查理',sub:'大貓熊與小小龍．那段一起走過的路',hint:'輕觸右側，翻開下一頁 ›'},
+  {cover:true,season:'prologue',motifs:['sun'],props:['hearts'],heartsAt:[[380,300,1.3]],panda:[338,406,.94],dragon:[452,412,1.02],
+   kick:'Big Panda & Tiny Dragon',title:'給小查理',sub:'那段一起走過的路',years:'2022 · 2023 · 2024 · 2025 · 2026',hint:'tap the right side to turn the page ›'},
 
-  {season:'dusk',solo:true,props:['bag'],panda:[360,406,1.04],lines:['當妳看到這封信時，','大貓熊已經放下了肩上，','那份勤業的重擔。']},
+  {season:'prologue',solo:true,props:['badge'],panda:[356,404,1.0],label:'序',no:1,
+   zh:['當妳看到這封信時，','大熊貓已經放下了肩上，','那份勤業的重擔。'],
+   en:['By the time you read this,','Big Panda has already set down','the heavy load he carried so long.']},
 
-  {season:'night',solo:true,motifs:['moon','stars'],props:['cardHeld'],panda:[360,406,1.04],
-   lines:['收到妳那張小卡片的時候，','妳大概很難想像，牠有多麼感動。'],note:'（每個入睡前，牠都要偷偷讀上一遍）'},
+  {season:'night',solo:true,motifs:['moon','stars'],props:['cardHeld'],panda:[356,404,1.0],label:'序',no:2,
+   zh:['收到妳那張小卡片的時候，','妳大概很難想像，牠有多麼感動。'],note:'（每個入睡前，牠都要偷偷讀上一遍）',
+   en:['When your little card arrived,','you could hardly imagine how it moved him.','— every night, he reads it once more —']},
 
-  {season:'winter',solo:true,motifs:['snow','tree-bare'],panda:[366,408,1.0],
-   lines:['2022、2023，','是牠人生裡一段很冷的冬天。','工作走到了瓶頸，心裡也有一場離別，','大貓熊幾乎，就要停下腳步了。']},
+  {season:'winter',solo:true,motifs:['snow','tree-bare'],panda:[366,406,.98],label:'冬',no:3,
+   zh:['2022、2023，','是牠人生裡一段很冷的冬天。','工作走到了瓶頸，心裡也準備接受了離別，','大熊貓幾乎，就要停下腳步了。'],
+   en:['2022, 2023 — a long, cold winter.','Work had reached a wall,','and his heart was bracing for a parting.','Big Panda almost stopped walking.']},
 
-  {season:'spring',motifs:['tree-blossom','petals'],props:['sparkles','hearts'],heartsAt:[[379,296,1.7]],panda:[300,404,1.02],dragon:[476,412,1.18],
-   lines:['就在那個轉角，牠遇見了小小龍。','沒有想太多，只覺得——','這隻小龍好暖，也好漂亮。'],note:'（噓，不要暗爽）'},
+  {season:'spring',motifs:['tree-blossom','petals'],props:['sparkles','hearts'],heartsAt:[[380,296,1.6]],panda:[300,404,1.0],dragon:[476,410,1.16],label:'春',no:4,
+   zh:['就在那個轉角，牠遇見了小小龍。','沒有想太多，只覺得——','這隻小小龍好暖，也好漂亮。'],note:'（噓，不要暗爽）',
+   en:['There, at the turning, he met Tiny Dragon.','He thought little of it — only that','this little dragon was so warm, and so lovely.']},
 
-  {season:'spring',motifs:['petals','flowers'],props:['footprints'],
-   lines:['於是大貓熊悄悄地，','把一整年的路，都排得能和小小龍一起走。','這是牠走了這麼久，','做過最重要的決定之一。']},
+  {season:'spring',motifs:['petals','flowers'],props:['footprints'],label:'春',no:5,
+   zh:['於是大熊貓悄悄地，','把一整年的路，都排得能和小小龍一起走。','這是牠走了這麼久，','做過最重要的決定之一。'],
+   en:['So, quietly, he arranged a whole year of road','to walk beside Tiny Dragon —','one of the most important choices','of his long journey.']},
 
-  {season:'dusk',motifs:['stars'],props:['lantern'],
-   lines:['後來牠才明白，','是小小龍陪牠走過了那段最暗的路，','也替牠分擔了好多好多的憂愁。','現在回頭看這四年——好感動，也好快樂。']},
+  {season:'ink',motifs:['stars'],props:['lantern'],label:'春',no:6,
+   zh:['後來牠才明白，','是小小龍陪牠走過了那段最暗的路，','也替牠分擔了好多好多的憂愁，點亮了這一切。','現在回頭看這四年——好值得、好知足、也好快樂。'],
+   en:['Only later did he understand:','it was she who walked him through the darkest road,','who shared so many of his worries — and lit it all up.','Looking back on these four years — so worth it, so content, so happy.']},
 
-  {season:'summer',props:['coffee'],say:'1＋1＞2',sayAt:[470,296],
-   lines:['還記得那陣子，','總在咖啡杯上，寫笑話給小小龍。','電審的路又雜又長，','但和妳一起走，1＋1，竟然大於2。']},
+  {season:'summer',motifs:['sun'],props:['holdCoffee'],label:'夏',no:7,
+   zh:['還記得在偉詮、芯鼎、明遠、宏齊……','咖啡杯上的笑話，細數著無數個美好時光。','電審的路好難走，','但和妳一起走，好有意義。'],
+   en:['At one client after another,','the jokes on our coffee cups counted out','so many good hours together.','The audit road was hard — but with you, so full of meaning.']},
 
-  {season:'summer',motifs:['flowers'],props:['gift','hearts'],heartsAt:[[360,264,1.1],[300,150,1.0]],
-   lines:['小小龍啊，','平時總是缺乏自信，想得很多，','卻有一顆好細膩的心，','總在留意著，別人需要些什麼。']},
+  {season:'summer',motifs:['sun'],props:['sparkles','hearts'],heartsAt:[[380,300,1.4],[520,150,.9]],label:'夏',no:8,
+   zh:['每當有急事、臨時要處理的危機，','牠第一個想到的，都是小小龍。','因為牠知道，小小龍會說：「沒問題、交給我。」','回首來看，原來，是妳給了牠面對的勇氣。','在黑暗的日子裡，陪伴是最溫暖的曙光，','而妳，就是那道光。'],
+   en:['Whenever something urgent came, a crisis to face,','she was the first he thought of —','for he knew she’d say, “No problem — leave it to me.”','Looking back, it was you who gave him courage.','In the darkest days, company is the warmest first light —','and you were that light.']},
 
-  {season:'summer',motifs:['sun'],props:['sparkles'],dragon:[440,412,1.26],
-   lines:['可是每當危機來臨，','牠總能挺身而出，把事情做得好好的，','還順手，溫暖了身邊的人。','在這麼複雜的世界裡，還能保持善良與純真——','真的，好不容易。']},
+  {season:'summer',motifs:['flowers'],props:['threeStars'],label:'夏',no:9,
+   zh:['雖然到最後，','還是沒能聽小小龍，親口說出自己的三個優點。','但在大熊貓心裡，','早就，數也數不完了。'],
+   en:['In the end, he still never heard her','name her own three good qualities.','But in Big Panda’s heart,','they were already too many to count.']},
 
-  {season:'summer',motifs:['sun','flowers'],say:'沒問題！',sayAt:[476,298],
-   lines:['每當有急事、有臨時要跑的路，','大貓熊第一個想到的，都是小小龍。','因為牠知道，妳會說：「沒問題。」','說也奇怪——原來，是妳，給了牠面對的勇氣。']},
+  {season:'spring',motifs:['petals'],props:['stream'],panda:[318,404,.98],dragon:[452,406,1.14],label:'夏',no:10,
+   zh:['2025，不經意的鼓勵，','陪小小龍跨過了人生一道小小的手術關卡。','看著妳變成自己喜歡的樣子——（不是只有外在而已）','大熊貓也跟著，好開心。'],
+   en:['In 2025, an offhand word of encouragement —','she crossed one small surgical hurdle in life.','Watching you become the self you love — (not only outside)','Big Panda was so happy too.']},
 
-  {season:'summer',motifs:['flowers'],props:['threeStars'],
-   lines:['到最後，','還是沒能聽小小龍，親口說出自己的三個優點。','但在大貓熊心裡，','早就，數也數不完了。']},
+  {season:'autumn',motifs:['stars'],props:['car'],panda:[386,406,.98],dragon:[486,410,1.1],label:'秋',no:11,
+   zh:['不知從何開始，','養成了彼此外勤的默契。','無論再遠都是順路，甚至一天開了兩小時的車車，','但能讓妳輕鬆點、少點負擔，牠就好知足。'],note:'謝謝妳，願意信任牠。',
+   en:['Somewhere along the way, driving to fieldwork together','became their quiet habit.','However far, it was always on the way — even two hours a day —','yet if it eased your load a little, that was enough.']},
 
-  {season:'spring',motifs:['petals'],props:['stream'],panda:[318,404,1.0],dragon:[452,406,1.16],
-   lines:['牠也莫名地，','陪小小龍跨過了人生一道小小的關卡。','看著妳跨出那一步，','慢慢變成自己喜歡的樣子——','大貓熊也跟著，好開心。']},
+  {season:'autumn',motifs:['rain'],props:['umbrella'],panda:[346,410,.98],dragon:[430,414,1.1],label:'秋',no:12,
+   zh:['只是啊，下雨天，或路途很遠的時候，','牠總會忍不住，擔心起妳。','牠一直想守好那條界線，','卻知道自己常常越了線，真的很抱歉。'],
+   en:['Only — on rainy days, or long roads,','he could not help but worry for you.','He tried to keep to the line,','though he knew he often crossed it. He is sorry.']},
 
-  {season:'dusk',motifs:['stars'],props:['car'],panda:[386,406,1.0],dragon:[486,412,1.12],
-   lines:['不知道從什麼時候開始，','養成了載小小龍的默契。','有時路很不順，有時一天要開上兩個鐘頭，','但牠一點也不覺得累。','能讓妳輕鬆些、開心些，牠就好知足。'],note:'謝謝妳，願意信任牠。'},
+  {season:'summer',motifs:['sun'],props:['holdCoffee','laptop'],label:'秋',no:13,
+   zh:['也謝謝妳，','包容了大熊貓的任性，','總是被牠挖去咖啡廳，一整天。','謝謝妳，讓這份工作變有趣、變有意義。'],
+   en:['And thank you, for indulging his willfulness —','forever dragged off to the café for a whole afternoon.','Thank you, for making this work fun, and full of meaning.']},
 
-  {season:'dusk',motifs:['rain'],props:['umbrella'],panda:[346,410,1.0],dragon:[430,414,1.12],
-   lines:['只是啊，下雨天，或路途很遠的時候，','牠總會忍不住，擔心起妳。','牠一直想守好那條界線，','卻也知道，自己常常越了線。','這一點，真的很抱歉，希望沒有讓妳不舒服。']},
+  {season:'autumn',motifs:['tree-autumn','leaves'],props:['musicNote'],label:'秋',no:14,
+   zh:['這樣的回憶，數也數不完。','接下來，要慢慢習慣，沒有妳的工作日子了。','但這不是休止符——','只是換一個身分、換一個地方，繼續努力。','希望我們都能成為更好的自己。'],
+   en:['Memories like these — too many to count.','Soon he must get used to workdays without you.','But this is not a full stop —','only a change of name, of place, and onward.','May we both become better versions of ourselves.']},
 
-  {season:'summer',props:['coffee'],
-   lines:['也謝謝妳，','包容了大貓熊的任性，','總是被牠，一整天挖去咖啡廳。']},
+  {season:'autumn',motifs:['leaves','flowers'],props:['phone','hearts'],heartsAt:[[474,356,1],[500,332,.85]],label:'秋',no:15,
+   zh:['所以，只要妳願意，','不管遇到什麼問題、什麼困難——','強尼，隨叫隨到。'],
+   en:['So, whenever you wish —','whatever the trouble, whatever the difficulty —','Johnny is only a call away.']},
 
-  {season:'autumn',motifs:['tree-autumn','leaves'],props:['musicNote'],
-   lines:['這樣的回憶，數也數不完。','接下來，要慢慢習慣，沒有小小龍的工作日子了。','但這不是休止符——','只是換一個身分、換一個地方，繼續努力。']},
+  {season:'night',motifs:['moon','stars'],props:['shootingStar','hearts'],heartsAt:[[380,300,1.5]],panda:[338,408,.92],dragon:[450,412,1.0],label:'冬',no:16,
+   zh:['驀然回首，這些回憶湧上來，','帶著一點不爭氣的眼淚，但好知足，也好感動。','謝謝妳，小查理——','我心目中年年績效五；謝謝妳，照亮了我。'],
+   en:['Looking back, it all comes flooding in,','with a few unworthy tears — yet so grateful, so moved.','Thank you, Little Charlie —','my top mark, year after year. Thank you, for lighting my way.']},
 
-  {season:'autumn',motifs:['leaves','flowers'],props:['phone','hearts'],heartsAt:[[474,356,1.1],[500,330,.9]],
-   lines:['所以，只要妳願意，','不管遇到什麼問題、什麼困難——','強尼，隨叫隨到。']},
-
-  {season:'night',motifs:['moon','stars'],props:['shootingStar','hearts'],heartsAt:[[379,300,1.6]],panda:[338,410,.96],dragon:[450,414,1.04],
-   lines:['驀然回首，這些回憶湧上來，','帶著一點不爭氣的眼淚，','但好知足，也好感動。','謝謝妳，小查理。','願妳，一直都好好的。'],
-   sign:'大貓熊・強尼　敬上\n2026 · 秋', readletter:true}
+  {season:'prologue',motifs:['rain'],props:['rainbow','hearts'],heartsAt:[[402,296,1.5],[356,262,1]],panda:[352,406,.96],dragon:[452,410,1.02],label:'待續',no:17,
+   zh:['「你在慶祝什麼？」小小龍問。','「我在慶祝被雨淋，」大熊貓說，「跟你一起。」','便是這四年我們一直在做的事，有妳真好 :)','故事還沒結束 :3'],
+   en:['That is what these four years have been —','and I’m so glad it was with you.','The story isn’t over yet.'],
+   sign:'大熊貓・強尼　敬上　2026 · 秋', readletter:true}
 ];
 
 /* ---------- render ---------- */
@@ -457,36 +541,40 @@ const stage=document.getElementById('stage');
 const total=PAGES.length;
 stage.innerHTML=PAGES.map((p,i)=>{
   p.i=i;
-  const art=`<div class="page-art">${buildScene(p)}
-      <button class="tapzone prev" data-dir="-1" aria-label="上一頁"></button>
-      <button class="tapzone next" data-dir="1" aria-label="下一頁"></button></div>`;
-  let copy;
+  const plate=`<div class="plate">${buildPlate(p)}</div>`;
+  const zones=`<button class="tapzone prev" data-dir="-1" aria-label="上一頁"></button><button class="tapzone next" data-dir="1" aria-label="下一頁"></button>`;
   if(p.cover){
-    copy=`<div class="page-copy"><div class="kicker">${p.kicker}</div><h1>${p.title}</h1><div class="sub">${p.sub}</div><div class="hint">${p.hint}</div></div>`;
-  }else{
-    const lines=p.lines.map(l=>`<p class="line">${l}</p>`).join('');
-    const note=p.note?`<p class="note">${p.note}</p>`:'';
-    const sign=p.sign?`<div class="sign">${p.sign.replace(/\n/g,'<br>')}</div>`:'';
-    const rl=p.readletter?`<button class="readletter" type="button" data-openletter>✉ 讀完整的信（逐字稿）</button>`:'';
-    copy=`<div class="page-copy">${lines}${note}${sign}${rl}</div>`;
+    return `<section class="page cover" data-i="${i}">${plate}
+      <div class="verse" style="margin-top:30px">
+        <div class="kick">${p.kick}</div>
+        <h1>${p.title}</h1>
+        <div class="sub">${p.sub}</div>
+        <div class="years">${p.years}</div>
+        <div class="hint">${p.hint}</div>
+      </div>${zones}</section>`;
   }
-  return `<section class="page${p.cover?' cover':''}" data-i="${i}">${art}${copy}</section>`;
+  const zh=`<p class="zh">${p.zh.join('<br>')}</p>`;
+  const note=p.note?`<p class="note">${p.note}</p>`:'';
+  const en=p.en?`<p class="en">${p.en.join('<br>')}</p>`:'';
+  const sign=p.sign?`<div class="sign">${p.sign}</div>`:'';
+  const rl=p.readletter?`<button class="readletter" type="button" data-openletter>✒ 讀完整的信 · the whole letter</button>`:'';
+  const foot=`<div class="colophon"><span class="season">${p.label}</span><span class="dot"></span><span class="no">${String(p.no).padStart(2,'0')}</span></div>`;
+  return `<section class="page" data-i="${i}">${plate}
+    <div class="verse">${zh}${note}${en}${sign}${rl}</div>${foot}${zones}</section>`;
 }).join('');
 
 let cur=0;
 const pages=[...stage.querySelectorAll('.page')];
-const counter=document.getElementById('counter');
-const prevBtn=document.getElementById('prev');
-const nextBtn=document.getElementById('next');
-const pad=n=>String(n).padStart(2,'0');
-function show(n){
+const count=document.getElementById('count');
+const prevBtn=document.getElementById('prev'), nextBtn=document.getElementById('next');
+function show(n,dir){
   cur=Math.max(0,Math.min(total-1,n));
-  pages.forEach((el,i)=>el.classList.toggle('is-current',i===cur));
-  counter.textContent=`${pad(cur+1)} — ${pad(total)}`;
+  pages.forEach((el,i)=>{el.classList.toggle('is-current',i===cur); if(i===cur) el.classList.toggle('dir-prev',dir<0);});
+  count.textContent=`${String(cur+1).padStart(2,'0')} / ${String(total).padStart(2,'0')}`;
   prevBtn.disabled=cur===0; nextBtn.disabled=cur===total-1;
-  try{document.querySelector('.spread').scrollIntoView({block:'nearest'});}catch(e){}
+  try{document.querySelector('.leaf').scrollIntoView({block:'nearest'});}catch(e){}
 }
-function go(d){show(cur+d);}
+function go(d){show(cur+d,d);}
 prevBtn.onclick=()=>go(-1); nextBtn.onclick=()=>go(1);
 stage.addEventListener('click',e=>{
   if(e.target.closest('[data-openletter]')){openLetter();return;}
@@ -497,18 +585,39 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(1);}
   if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}
 });
-let tx=0;
-stage.addEventListener('touchstart',e=>{tx=e.changedTouches[0].clientX;},{passive:true});
-stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)go(dx<0?1:-1);},{passive:true});
+let tx=0,ty=0;
+stage.addEventListener('touchstart',e=>{tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;},{passive:true});
+stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>38&&Math.abs(dx)>Math.abs(dy)*1.3)go(dx<0?1:-1);},{passive:true});
 document.getElementById('printBtn').onclick=()=>window.print();
 
-/* letter overlay */
 const lv=document.getElementById('letterView');
 function openLetter(){lv.hidden=false;lv.scrollTop=0;}
 function closeLetter(){lv.hidden=true;}
 document.getElementById('letterBtn').onclick=openLetter;
 document.getElementById('letterClose').onclick=closeLetter;
 lv.addEventListener('click',e=>{if(e.target===lv)closeLetter();});
+show(0,1);
+
+/* editable transcript (saved on this device) */
+const body=document.getElementById('letterBody');
+const ORIG=body.innerHTML;
+const KEY='xiaocharlie_letter_v2';
+try{const s=localStorage.getItem(KEY); if(s) body.innerHTML=s;}catch(e){}
+let editing=false;
+const eb=document.getElementById('lcEdit'), lcHint=document.getElementById('lcHint');
+eb.onclick=()=>{editing=!editing; body.contentEditable=editing?'true':'false'; body.classList.toggle('editing',editing); eb.textContent=editing?'✓ 完成':'✎ 編輯'; lcHint.hidden=!editing; if(editing){body.focus();}};
+body.addEventListener('input',()=>{try{localStorage.setItem(KEY,body.innerHTML);}catch(e){}});
+document.getElementById('lcCopy').onclick=async()=>{
+  const t=body.innerText.replace(/\n{3,}/g,'\n\n').trim();
+  let ok=false; try{await navigator.clipboard.writeText(t);ok=true;}catch(e){}
+  const btn=document.getElementById('lcCopy'), o=btn.textContent;
+  btn.textContent=ok?'✓ 已複製':'請長按選取複製'; setTimeout(()=>btn.textContent=o,1600);
+};
+document.getElementById('lcReset').onclick=()=>{
+  if(!confirm('還原成原本的逐字稿？這會清掉這台裝置上的編輯。'))return;
+  body.innerHTML=ORIG; try{localStorage.removeItem(KEY);}catch(e){}
+  if(editing){eb.click();}
+};
 
 show(0);
 </script>
