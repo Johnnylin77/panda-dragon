@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="dark">
 <head>
-    <script data-goatcounter="https://asd830428.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://asd830428.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f4efe3">
+<meta name="theme-color" content="#241a11" id="themeColor">
+<meta name="color-scheme" content="dark">
 <meta name="description" content="給小查理 — 大熊貓與小小龍，那段一起走過的路（典藏版）">
 <meta name="robots" content="noindex, nofollow">
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -32,123 +33,154 @@
     --sky-summer-a:#dbe4cd; --sky-summer-b:#eee7cf;
     --sky-autumn-a:#e6cba6; --sky-autumn-b:#ecdfc4;
     --sky-ink-a:#cbc6ba; --sky-ink-b:#ddd8cc;
+    /* type scale — serif UI ladder + brush ladder */
+    --fz-1:12.5px; --fz-2:13.5px; --fz-3:15px; --fz-4:16px; --fz-5:18px;
+    --fb-1:21px; --fb-2:22px; --fb-3:26px; --fb-4:30px;
   }
   :root:not([data-theme="light"]){
     @media (prefers-color-scheme: dark){
-      --paper:#1b1f22; --paper-2:#20252a; --edge:#2a3036;
-      --ink:#e7e1d2; --ink-soft:#a49d8b; --ink-faint:#6e6959;
-      --en:#a49b86; --footer:#7c7565; --rule:#2f353c;
-      --sumi:#d8d2c3;
-      --panda:#e6e1d3; --panda-line:#9a9482; --panda-ink:#26241f;
-      --dragon:#79988a; --dragon-2:#9ab0a4; --dragon-ink:#2b4438;
-      --hill-1:#282e33; --hill-2:#222a30; --path:#333a34;
-      --sun:#c6a05c; --moon:#d6d0c0; --star:#c5cdd6; --snow:#e7ebef;
-      --petal:#c58e96; --rain:#5d6d76; --stream:#37505a;
-      --leaf-a:#b3854a; --leaf-b:#a4603c; --leaf-c:#9b7a42;
-      --flower:#c58e96; --flower2:#c6a25c; --steam:#5a5f68;
-      --sky-prologue-a:#272a30; --sky-prologue-b:#1c2126;
-      --sky-night-a:#18242f; --sky-night-b:#12181e;
-      --sky-winter-a:#222a32; --sky-winter-b:#1b2026;
-      --sky-spring-a:#2a2630; --sky-spring-b:#1c2126;
-      --sky-summer-a:#222a26; --sky-summer-b:#1b2027;
-      --sky-autumn-a:#2c2720; --sky-autumn-b:#1e2227;
-      --sky-ink-a:#2a2e31; --sky-ink-b:#1e2328;
+      --paper:#241a11; --paper-2:#2c2015; --edge:#3d2c1c;
+      --ink:#efe4d2; --ink-soft:#c4ac8b; --ink-faint:#8c7458;
+      --en:#cbb595; --footer:#8f7a5c; --rule:#3f2e1e;
+      --sumi:#e9dec9;
+      --panda:#efe7d6; --panda-line:#a6987f; --panda-ink:#2a2016;
+      --dragon:#7fa08c; --dragon-2:#a7c0ac; --dragon-ink:#22362b;
+      --hill-1:#37291b; --hill-2:#463524; --path:#5a4530;
+      --sun:#e6b467; --moon:#ecdfc4; --star:#e6d6ad; --snow:#efe9dc;
+      --petal:#cf9aa0; --rain:#6f7f86; --stream:#3a5158;
+      --leaf-a:#c58a41; --leaf-b:#ab5f34; --leaf-c:#9e7b3f;
+      --flower:#cf9aa0; --flower2:#d8b45f; --steam:#6a5f4a;
+      --sky-prologue-a:#3a2c1d; --sky-prologue-b:#281d12;
+      --sky-night-a:#26262c; --sky-night-b:#181820;
+      --sky-winter-a:#312a22; --sky-winter-b:#251d15;
+      --sky-spring-a:#372630; --sky-spring-b:#281d1a;
+      --sky-summer-a:#352f1e; --sky-summer-b:#281f14;
+      --sky-autumn-a:#3d2b1a; --sky-autumn-b:#2a1f13;
+      --sky-ink-a:#302820; --sky-ink-b:#231b14;
     }
   }
   :root[data-theme="dark"]{
-    --paper:#1b1f22; --paper-2:#20252a; --edge:#2a3036;
-    --ink:#e7e1d2; --ink-soft:#a49d8b; --ink-faint:#6e6959;
-    --en:#a49b86; --footer:#7c7565; --rule:#2f353c;
-    --sumi:#d8d2c3;
-    --panda:#e6e1d3; --panda-line:#9a9482; --panda-ink:#26241f;
-    --dragon:#79988a; --dragon-2:#9ab0a4; --dragon-ink:#2b4438;
-    --hill-1:#282e33; --hill-2:#222a30; --path:#333a34;
-    --sun:#c6a05c; --moon:#d6d0c0; --star:#c5cdd6; --snow:#e7ebef;
-    --petal:#c58e96; --rain:#5d6d76; --stream:#37505a;
-    --leaf-a:#b3854a; --leaf-b:#a4603c; --leaf-c:#9b7a42;
-    --flower:#c58e96; --flower2:#c6a25c; --steam:#5a5f68;
-    --sky-prologue-a:#272a30; --sky-prologue-b:#1c2126;
-    --sky-night-a:#18242f; --sky-night-b:#12181e;
-    --sky-winter-a:#222a32; --sky-winter-b:#1b2026;
-    --sky-spring-a:#2a2630; --sky-spring-b:#1c2126;
-    --sky-summer-a:#222a26; --sky-summer-b:#1b2027;
-    --sky-autumn-a:#2c2720; --sky-autumn-b:#1e2227;
-    --sky-ink-a:#2a2e31; --sky-ink-b:#1e2328;
+    --paper:#241a11; --paper-2:#2c2015; --edge:#3d2c1c;
+    --ink:#efe4d2; --ink-soft:#c4ac8b; --ink-faint:#8c7458;
+    --en:#cbb595; --footer:#8f7a5c; --rule:#3f2e1e;
+    --sumi:#e9dec9;
+    --panda:#efe7d6; --panda-line:#a6987f; --panda-ink:#2a2016;
+    --dragon:#7fa08c; --dragon-2:#a7c0ac; --dragon-ink:#22362b;
+    --hill-1:#37291b; --hill-2:#463524; --path:#5a4530;
+    --sun:#e6b467; --moon:#ecdfc4; --star:#e6d6ad; --snow:#efe9dc;
+    --petal:#cf9aa0; --rain:#6f7f86; --stream:#3a5158;
+    --leaf-a:#c58a41; --leaf-b:#ab5f34; --leaf-c:#9e7b3f;
+    --flower:#cf9aa0; --flower2:#d8b45f; --steam:#6a5f4a;
+    --sky-prologue-a:#3a2c1d; --sky-prologue-b:#281d12;
+    --sky-night-a:#26262c; --sky-night-b:#181820;
+    --sky-winter-a:#312a22; --sky-winter-b:#251d15;
+    --sky-spring-a:#372630; --sky-spring-b:#281d1a;
+    --sky-summer-a:#352f1e; --sky-summer-b:#281f14;
+    --sky-autumn-a:#3d2b1a; --sky-autumn-b:#2a1f13;
+    --sky-ink-a:#302820; --sky-ink-b:#231b14;
   }
 
   *{box-sizing:border-box}
+  html{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;overscroll-behavior:none}
   body{
     background:var(--paper); color:var(--ink);
     font-family:"Noto Serif TC",Georgia,"Songti TC",serif;
-    min-height:100vh; margin:0;
+    min-height:100vh; min-height:100svh; margin:0;
     display:flex; align-items:center; justify-content:center;
     padding:22px 18px 36px; -webkit-font-smoothing:antialiased;
   }
+  /* warm wood grain + lamp glow (dark theme) */
+  :root[data-theme="dark"] body{
+    background-color:var(--paper);
+    background-image:
+      radial-gradient(150% 90% at 50% -12%, rgba(92,66,40,.42), rgba(36,26,17,0) 60%),
+      repeating-linear-gradient(93deg, rgba(16,10,4,.05) 0 2px, rgba(214,180,130,.014) 2px 7px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.03) 0 90px, rgba(120,88,54,.05) 90px 92px);
+  }
+  :root[data-theme="dark"] .leaf{box-shadow:0 1px 0 rgba(0,0,0,.35),0 26px 54px -34px rgba(0,0,0,.7),inset 0 0 60px -30px rgba(120,86,50,.5)}
   .book{width:100%;max-width:600px;margin:0 auto}
   .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px 14px;flex-wrap:wrap}
-  .topbar .mark{font-family:"Long Cang",cursive;font-size:21px;color:var(--ink-soft);letter-spacing:.03em;margin-right:auto}
-  .topbar button{font-family:"EB Garamond",serif;font-style:italic;font-size:14px;letter-spacing:.03em;color:var(--ink-soft);background:none;border:1px solid var(--rule);border-radius:2px;padding:5px 14px;cursor:pointer;transition:.2s}
-  .topbar button:hover{color:var(--ink);border-color:var(--ink-faint)}
+  .topbar .mark{font-family:"Long Cang",cursive;font-size:var(--fb-1);color:var(--ink-soft);letter-spacing:.03em;margin-right:auto}
+  .topbar button{font-family:"EB Garamond",serif;font-style:italic;font-size:var(--fz-3);letter-spacing:.03em;color:var(--ink-soft);background:none;border:1px solid var(--rule);border-radius:2px;padding:5px 14px;cursor:pointer;transition:.2s;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+  @media (hover:hover) and (pointer:fine){.topbar button:hover{color:var(--ink);border-color:var(--ink-faint)}}
+  .topbar button:active{transform:scale(.95)}
+  .topbar .iconbtn{font-family:inherit;font-style:normal;font-size:var(--fz-4);line-height:1;padding:5px 12px;color:var(--ink-soft)}
 
   .leaf{position:relative;background:var(--paper-2);border:1px solid var(--edge);box-shadow:0 1px 0 var(--edge),0 20px 44px -34px rgba(40,34,24,.55)}
   .page{display:none;flex-direction:column;padding:30px clamp(18px,5vw,40px) 26px;position:relative}
   .page.is-current{display:flex}
+  #stage{position:relative;perspective:2000px}
+  .page.turning{display:flex;position:absolute;inset:0;z-index:20;transform-origin:left center;backface-visibility:hidden;will-change:transform,opacity;box-shadow:0 14px 40px -18px rgba(30,24,14,.5)}
+  .page.turning.to-prev{transform-origin:right center}
   @media (prefers-reduced-motion: no-preference){
-    .page.is-current{animation:ebk .34s ease both}
-    .page.is-current.dir-prev{animation:ebkL .34s ease both}
+    .page.turning{animation:flipAway 1.05s cubic-bezier(.38,.06,.3,1) forwards}
+    .page.turning.to-prev{animation:flipAwayL 1.05s cubic-bezier(.38,.06,.3,1) forwards}
+    .page.turning::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(30,24,14,0) 42%,rgba(30,24,14,.34));opacity:0;animation:flipShade 1.05s ease-in forwards}
+    .page.turning.to-prev::after{background:linear-gradient(270deg,rgba(30,24,14,0) 42%,rgba(30,24,14,.34))}
   }
-  @keyframes ebk{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
-  @keyframes ebkL{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
+  @keyframes flipAway{0%{transform:rotateY(0);opacity:1}30%{opacity:.45}62%{opacity:.1}100%{transform:rotateY(-118deg);opacity:0}}
+  @keyframes flipAwayL{0%{transform:rotateY(0);opacity:1}30%{opacity:.45}62%{opacity:.1}100%{transform:rotateY(118deg);opacity:0}}
+  @keyframes flipShade{0%{opacity:0}45%{opacity:1}100%{opacity:.5}}
+
+  /* ambient scene motion lives in an unfiltered overlay (SMIL) so it stays smooth */
+  .fx{pointer-events:none}
 
   .plate{position:relative;width:100%}
   .plate svg{display:block;width:100%;height:auto}
-  .tapzone{position:absolute;top:0;bottom:0;width:32%;border:0;background:transparent;cursor:pointer;padding:0;z-index:5;-webkit-tap-highlight-color:transparent}
+  .tapzone{position:absolute;top:0;bottom:0;width:32%;border:0;background:transparent;cursor:pointer;padding:0;z-index:5;-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none}
   .tapzone.prev{left:0} .tapzone.next{right:0}
   .tapzone:focus-visible{outline:1px solid var(--dragon);outline-offset:-8px}
   .readletter{position:relative;z-index:6}
 
   .verse{margin:26px auto 0;max-width:34em;text-align:center;display:flex;flex-direction:column;gap:1.1em}
-  .zh{margin:0;font-size:clamp(16px,2.6vw,18.5px);font-weight:300;line-height:2.15;letter-spacing:.04em;color:var(--ink);text-wrap:balance}
+  .zh{margin:0;font-size:clamp(16px,2.6vw,var(--fz-5));font-weight:300;line-height:2.15;letter-spacing:.04em;color:var(--ink);text-wrap:balance}
   .zh .say{white-space:nowrap}
-  .en{margin:0;font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:clamp(15px,2.4vw,17px);line-height:1.7;letter-spacing:.01em;color:var(--en);text-wrap:balance}
-  .note{font-family:"Long Cang",cursive;font-size:clamp(19px,3.2vw,23px);line-height:1.5;color:var(--ink-soft)}
-  .sign{align-self:center;font-family:"Long Cang",cursive;font-size:clamp(19px,3vw,22px);color:var(--ink-soft);line-height:1.7;margin-top:.3em}
-  .readletter{margin:1.5em auto 0;font-family:"EB Garamond",serif;font-style:italic;font-size:15px;letter-spacing:.02em;color:var(--dragon-ink);background:none;border:1px solid var(--dragon);border-radius:2px;padding:8px 20px;cursor:pointer;transition:.2s}
-  .readletter:hover{background:var(--dragon);color:var(--paper-2)}
+  .en{margin:0;font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:clamp(15px,2.4vw,var(--fz-4));line-height:1.7;letter-spacing:.01em;color:var(--en);text-wrap:balance}
+  .note{font-family:"Long Cang",cursive;font-size:clamp(19px,3.2vw,var(--fb-2));line-height:1.5;color:var(--ink-soft)}
+  .sign{align-self:center;font-family:"Long Cang",cursive;font-size:clamp(19px,3vw,var(--fb-2));color:var(--ink-soft);line-height:1.7;margin-top:.3em}
+  .readletter{margin:1.9em auto .2em;display:inline-flex;align-items:center;gap:.5em;font-family:"EB Garamond","Noto Serif TC",serif;font-style:italic;font-size:var(--fz-5);letter-spacing:.03em;color:#2a2016;background:var(--sun);border:1px solid var(--sun);border-radius:999px;padding:13px 30px;cursor:pointer;transition:transform .2s;touch-action:manipulation;user-select:none;-webkit-user-select:none;box-shadow:0 8px 24px -8px rgba(0,0,0,.55)}
+  @media (prefers-reduced-motion: no-preference){.readletter{animation:ctaPulse 2.6s ease-in-out infinite}}
+  @media (hover:hover) and (pointer:fine){.readletter:hover{transform:translateY(-1px)}}
+  .readletter:active{transform:scale(.97)}
+  @keyframes ctaPulse{0%,100%{box-shadow:0 0 0 0 rgba(230,180,103,0),0 8px 24px -8px rgba(0,0,0,.55)}50%{box-shadow:0 0 0 7px rgba(230,180,103,.16),0 8px 24px -8px rgba(0,0,0,.55)}}
 
-  .colophon{margin:30px auto 2px;display:flex;align-items:center;justify-content:center;gap:14px;color:var(--footer);font-size:12.5px;letter-spacing:.34em}
+  .colophon{margin:30px auto 2px;display:flex;align-items:center;justify-content:center;gap:14px;color:var(--footer);font-size:var(--fz-1);letter-spacing:.34em}
   .colophon .season{font-family:"Noto Serif TC",serif}
   .colophon .no{font-variant-numeric:tabular-nums}
   .colophon .dot{width:3px;height:3px;border-radius:50%;background:var(--footer);opacity:.7}
 
   /* frontispiece */
   .page.cover{align-items:center;text-align:center;padding-top:20px}
-  .cover .kick{font-family:"EB Garamond",serif;font-style:italic;font-size:15px;letter-spacing:.08em;color:var(--en);margin-bottom:.2em}
+  .cover .kick{font-family:"EB Garamond",serif;font-style:italic;font-size:var(--fz-3);letter-spacing:.08em;color:var(--en);margin-bottom:.2em}
   .cover h1{font-weight:500;font-size:clamp(34px,9vw,52px);margin:.1em 0 0;letter-spacing:.12em;color:var(--ink)}
-  .cover .sub{font-family:"Long Cang",cursive;font-size:clamp(20px,4vw,26px);color:var(--ink-soft);margin-top:.5em;letter-spacing:.04em}
-  .cover .years{margin-top:1.5em;font-family:"EB Garamond",serif;font-style:italic;font-size:14px;letter-spacing:.28em;color:var(--footer);font-variant-numeric:tabular-nums}
-  .cover .hint{margin-top:1.4em;font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.06em;color:var(--ink-faint)}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4px 0}
-  .nav button{font-family:"EB Garamond",serif;font-size:15px;color:var(--ink-soft);background:none;border:1px solid var(--rule);width:42px;height:42px;border-radius:50%;cursor:pointer;transition:.2s;display:grid;place-items:center}
-  .nav button:hover:not(:disabled){color:var(--ink);border-color:var(--ink-faint)}
-  .nav button:disabled{opacity:.3;cursor:default}
-  .count{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.24em;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+  .cover .sub{font-family:"Long Cang",cursive;font-size:clamp(20px,4vw,var(--fb-3));color:var(--ink-soft);margin-top:.5em;letter-spacing:.04em}
+  .cover .years{margin-top:1.5em;font-family:"EB Garamond",serif;font-style:italic;font-size:var(--fz-2);letter-spacing:.28em;color:var(--footer);font-variant-numeric:tabular-nums}
+  .cover .hint{margin-top:1.4em;font-family:"EB Garamond",serif;font-style:italic;font-size:var(--fz-2);letter-spacing:.06em;color:var(--ink-faint)}
 
-  .letter-view{position:fixed;inset:0;z-index:50;background:rgba(28,24,16,.52);display:flex;align-items:flex-start;justify-content:center;padding:22px 16px;overflow:auto}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4px 0}
+  .nav button{font-family:"EB Garamond",serif;font-size:var(--fz-3);color:var(--ink-soft);background:none;border:1px solid var(--rule);width:42px;height:42px;border-radius:50%;cursor:pointer;transition:.2s;display:grid;place-items:center;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+  @media (hover:hover) and (pointer:fine){.nav button:hover:not(:disabled){color:var(--ink);border-color:var(--ink-faint)}}
+  .nav button:active:not(:disabled){transform:scale(.92)}
+  .nav button:disabled{opacity:.3;cursor:default}
+  .count{font-family:"EB Garamond",serif;font-style:italic;font-size:var(--fz-2);letter-spacing:.24em;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+
+  .letter-view{position:fixed;inset:0;z-index:50;background:rgba(28,24,16,.52);display:flex;align-items:flex-start;justify-content:center;padding:22px 16px;overflow:auto;overscroll-behavior:contain}
   .letter-card{background:var(--paper);color:var(--ink);max-width:620px;width:100%;margin:auto;border:1px solid var(--edge);box-shadow:0 26px 64px -32px rgba(0,0,0,.6);padding:clamp(26px,5vw,46px)}
-  .letter-card .lc-kick{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.14em;color:var(--dragon-ink)}
-  .letter-card h2{font-family:"Long Cang",cursive;font-weight:400;font-size:30px;margin:2px 0 0;color:var(--ink)}
-  .letter-card .lc-time{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.16em;color:var(--footer);margin:12px 0 20px;font-variant-numeric:tabular-nums}
-  .letter-card p{font-size:15.5px;line-height:2.1;font-weight:300;letter-spacing:.02em;margin:0 0 1.1em;color:var(--ink)}
-  .letter-card .lc-sign{font-family:"Long Cang",cursive;font-size:22px;color:var(--ink-soft);text-align:right;margin-top:8px}
-  .letter-close{position:sticky;top:0;float:right;margin:-8px -8px 0 0;font-family:"EB Garamond",serif;font-size:20px;line-height:1;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--edge);width:36px;height:36px;border-radius:50%;cursor:pointer}
-  .letter-close:hover{color:var(--ink)}
+  .letter-card .lc-kick{font-family:"EB Garamond","Noto Serif TC",serif;font-style:italic;font-size:var(--fz-2);letter-spacing:.14em;color:var(--dragon-ink)}
+  .letter-card h2{font-family:"Long Cang",cursive;font-weight:400;font-size:var(--fb-4);margin:2px 0 0;color:var(--ink)}
+  .letter-card .lc-time{font-family:"EB Garamond","Noto Serif TC",serif;font-style:italic;font-size:var(--fz-2);letter-spacing:.16em;color:var(--footer);margin:12px 0 20px;font-variant-numeric:tabular-nums}
+  .letter-card p{font-size:var(--fz-4);line-height:2.1;font-weight:300;letter-spacing:.02em;margin:0 0 1.1em;color:var(--ink)}
+  .letter-card .lc-sign{font-family:"Long Cang",cursive;font-size:var(--fb-2);color:var(--ink-soft);text-align:right;margin-top:8px}
+  .letter-close{position:sticky;top:0;float:right;margin:-8px -8px 0 0;font-family:"EB Garamond",serif;font-size:20px;line-height:1;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--edge);width:36px;height:36px;border-radius:50%;cursor:pointer;touch-action:manipulation}
+  @media (hover:hover) and (pointer:fine){.letter-close:hover{color:var(--ink)}}
+  .letter-close:active{transform:scale(.94)}
   .lc-tools{display:flex;gap:8px;margin:2px 0 18px;flex-wrap:wrap}
-  .lc-tools button{font-family:"EB Garamond",serif;font-style:italic;font-size:13px;color:var(--ink-soft);background:none;border:1px solid var(--rule);border-radius:2px;padding:5px 12px;cursor:pointer}
-  .lc-tools button:hover{color:var(--ink);border-color:var(--ink-faint)}
+  .lc-tools button{font-family:"EB Garamond","Noto Serif TC",serif;font-style:italic;font-size:var(--fz-2);color:var(--ink-soft);background:none;border:1px solid var(--rule);border-radius:2px;padding:5px 12px;cursor:pointer;touch-action:manipulation}
+  @media (hover:hover) and (pointer:fine){.lc-tools button:hover{color:var(--ink);border-color:var(--ink-faint)}}
+  .lc-tools button:active{transform:scale(.96)}
   .letter-body{outline:none}
   .letter-body.editing{background:rgba(138,166,148,.09);border:1px dashed var(--dragon);border-radius:4px;padding:14px 16px;margin:0 -6px}
-  .lc-hint{font-family:"EB Garamond",serif;font-style:italic;font-size:12.5px;line-height:1.6;color:var(--footer);margin:12px 0 0}
+  .lc-hint{font-family:"EB Garamond","Noto Serif TC",serif;font-style:italic;font-size:var(--fz-1);line-height:1.6;color:var(--footer);margin:12px 0 0}
   .letter-card .lc-quote{text-align:center;color:var(--en);line-height:1.95;margin:1.5em 0 1em;padding-top:1.2em;border-top:1px solid var(--rule)}
 
   @media print{
@@ -166,7 +198,7 @@
   <div class="topbar">
     <span class="mark">給小查理</span>
     <button id="letterBtn" type="button">the whole letter</button>
-    <button id="printBtn" type="button">print / PDF</button>
+    <button id="themeBtn" type="button" class="iconbtn" aria-label="切換色調">☀</button>
   </div>
   <div class="leaf"><div id="stage"></div></div>
   <div class="nav">
@@ -284,13 +316,13 @@ const LEAVES=[[140,112],[256,92],[560,112],[642,92],[690,164],[190,224],[600,232
 const FLOWERS=[[160,398],[214,406],[590,398],[648,404],[520,408]];
 
 function wash(cx,cy,rx,ry,fill,op){return `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${fill}" opacity="${op}" filter="url(#soft)"/>`;}
-function stars(){return STARS.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--star)" opacity=".8"/>`).join('');}
+function stars(){return STARS.map(([x,y,r],i)=>{const dur=(3.2+(i%4)*0.7).toFixed(1),bg=(-(i*0.53)).toFixed(2);return `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--star)" opacity=".8"><animate attributeName="opacity" values=".3;1;.3" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/></circle>`;}).join('');}
 function sun(){return wash(628,96,58,58,'var(--sun)',.2)+`<circle cx="628" cy="96" r="34" fill="var(--sun)" opacity=".42"/>`;}
 function moon(){return `<circle cx="636" cy="90" r="30" fill="var(--moon)" opacity=".95"/><circle cx="624" cy="84" r="27" fill="var(--s-a)" opacity=".92"/>`;}
-function snow(){return SNOW.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--snow)" opacity=".9"/>`).join('');}
-function petals(){return PETALS.map(([x,y,a])=>`<ellipse cx="${x}" cy="${y}" rx="4.5" ry="2.7" fill="var(--petal)" opacity=".8" transform="rotate(${a} ${x} ${y})"/>`).join('');}
-function rain(){let s='';for(let i=0;i<14;i++){const x=90+i*44+(i%2?10:0),y=64+(i%3)*36;s+=`<line x1="${x}" y1="${y}" x2="${x-8}" y2="${y+22}" stroke="var(--rain)" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>`;}return s;}
-function leaves(){const c=['var(--leaf-a)','var(--leaf-b)','var(--leaf-c)'];return LEAVES.map(([x,y],i)=>`<ellipse cx="${x}" cy="${y}" rx="5.5" ry="3.2" fill="${c[i%3]}" opacity=".85" transform="rotate(${(i*53)%360} ${x} ${y})"/>`).join('');}
+function snow(){return SNOW.map(([x,y,r],i)=>{const dur=(5.5+(i%5)*0.8).toFixed(1),bg=(-(i*0.6)).toFixed(2),dx=i%2?6:-6;return `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--snow)"><animateTransform attributeName="transform" type="translate" values="0 -12; ${dx} 120" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.85;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/></circle>`;}).join('');}
+function petals(){return PETALS.map(([x,y,a],i)=>{const dur=(6+(i%4)).toFixed(1),bg=(-(i*0.8)).toFixed(2);return `<g><animateTransform attributeName="transform" type="translate" values="0 -8; 12 62; -8 132" keyTimes="0;.5;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><ellipse cx="${x}" cy="${y}" rx="4.5" ry="2.7" fill="var(--petal)" transform="rotate(${a} ${x} ${y})"><animate attributeName="opacity" values="0;.85;.85;0" keyTimes="0;.12;.85;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/></ellipse></g>`;}).join('');}
+function rain(){let s='';for(let i=0;i<14;i++){const x=90+i*44+(i%2?10:0),y=64+(i%3)*36;const dur=(0.9+(i%3)*0.25).toFixed(2),bg=(-(i*0.13)).toFixed(2);s+=`<line x1="${x}" y1="${y}" x2="${x-8}" y2="${y+22}" stroke="var(--rain)" stroke-width="1.4" stroke-linecap="round"><animateTransform attributeName="transform" type="translate" values="0 -16; 0 150" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.55;0" keyTimes="0;.2;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/></line>`;}return s;}
+function leaves(){const c=['var(--leaf-a)','var(--leaf-b)','var(--leaf-c)'];return LEAVES.map(([x,y],i)=>{const dur=(7+(i%4)).toFixed(1),bg=(-(i*0.9)).toFixed(2);return `<g><animateTransform attributeName="transform" type="translate" values="0 -8; 16 68; -6 140" keyTimes="0;.5;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><ellipse cx="${x}" cy="${y}" rx="5.5" ry="3.2" fill="${c[i%3]}" transform="rotate(${(i*53)%360} ${x} ${y})"><animate attributeName="opacity" values="0;.85;.85;0" keyTimes="0;.12;.85;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/></ellipse></g>`;}).join('');}
 function flowers(){return FLOWERS.map(([x,y],i)=>{const c=i%2?'var(--flower2)':'var(--flower)';return `<g opacity=".8"><circle cx="${x}" cy="${y-5}" r="2.2" fill="${c}"/><circle cx="${x-3}" cy="${y-2}" r="2.2" fill="${c}"/><circle cx="${x+3}" cy="${y-2}" r="2.2" fill="${c}"/><circle cx="${x}" cy="${y+1}" r="1.4" fill="var(--sun)"/></g>`;}).join('');}
 function tree(kind){
   let dots='';
@@ -362,8 +394,9 @@ function giftFlower(x,y){return `<g transform="translate(${x},${y})">
   ${[[0,-5],[-5,-1],[5,-1],[-3,4],[3,4]].map(([dx,dy])=>`<circle cx="${dx}" cy="${dy}" r="3.2" fill="var(--flower)"/>`).join('')}
   <circle cx="0" cy="0" r="2.2" fill="var(--sun)"/>
 </g>`;}
-function sparkles(list){return list.map(([x,y,r])=>spark(x,y,r||5,'var(--sun)')).join('');}
-function threeStars(x,y){return spark(x-28,y+6,5)+spark(x,y-6,7)+spark(x+28,y+6,5);}
+function twinkleG(inner,bg){return `<g><animate attributeName="opacity" values=".3;1;.3" dur="2.6s" begin="${bg}s" repeatCount="indefinite"/>${inner}</g>`;}
+function sparkles(list){return list.map(([x,y,r],i)=>twinkleG(spark(x,y,r||5,'var(--sun)'),(-(i*0.7)).toFixed(2))).join('');}
+function threeStars(x,y){return twinkleG(spark(x-28,y+6,5),'0')+twinkleG(spark(x,y-6,7),'-1')+twinkleG(spark(x+28,y+6,5),'-2');}
 function streamStones(){return wash(400,414,340,26,'var(--stream)',.5)+`
   <ellipse cx="358" cy="416" rx="19" ry="7" fill="var(--path)"/>
   <ellipse cx="408" cy="410" rx="17" ry="6.5" fill="var(--path)"/>
@@ -392,14 +425,13 @@ function phone(x,y){return `<g transform="translate(${x},${y})">
   <rect x="-11" y="-21" width="22" height="42" rx="3" fill="var(--panda)"/>
   ${heart(0,-6,1.4,'var(--petal)')}
 </g>`;}
-function musicNote(x,y){return `<g fill="var(--dragon-ink)" opacity=".7">
-  <rect x="${x+5}" y="${y-16}" width="2.6" height="28"/>
-  <path d="M${x+7.6} ${y-16} q10 1 8 11 q-1 -6 -8 -5 z"/>
-  <ellipse cx="${x}" cy="${y+14}" rx="6.5" ry="4.6" transform="rotate(-18 ${x} ${y+14})"/>
-</g>`;}
-function shootingStar(){return `<line x1="530" y1="70" x2="616" y2="38" stroke="var(--star)" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>${spark(624,34,4,'var(--moon)')}`;}
+function musicNote(x,y){
+  const note=(nx,ny,dur,bg,op)=>`<g><animateTransform attributeName="transform" type="translate" values="0 4; 8 -26" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><g fill="var(--dragon-ink)"><animate attributeName="opacity" values="0;${op};${(op*0.8).toFixed(2)};0" keyTimes="0;.18;.7;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><rect x="${nx+5}" y="${ny-16}" width="2.6" height="28"/><path d="M${nx+7.6} ${ny-16} q10 1 8 11 q-1 -6 -8 -5 z"/><ellipse cx="${nx}" cy="${ny+14}" rx="6.5" ry="4.6" transform="rotate(-18 ${nx} ${ny+14})"/></g></g>`;
+  return note(x,y,5,'0',0.7)+note(x+34,y+6,6,'-2.4',0.48);
+}
+function shootingStar(){return `<g opacity="0"><animateTransform attributeName="transform" type="translate" values="-46 18; -46 18; 0 0; 0 0" keyTimes="0;.72;.95;1" dur="6.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.7;0" keyTimes="0;.72;.9;1" dur="6.5s" repeatCount="indefinite"/><line x1="530" y1="70" x2="616" y2="38" stroke="var(--star)" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>${spark(624,34,4,'var(--moon)')}</g>`;}
 function rainbow(){const cols=['#dca59c','#e0bd85','#c6cd93','#9dbdac','#a6b0cb'];let s='';cols.forEach((c,i)=>{const r=182-i*9;s+=`<path d="M ${400-r} 214 A ${r} ${r} 0 0 1 ${400+r} 214" fill="none" stroke="${c}" stroke-width="7" opacity=".4" stroke-linecap="round"/>`;});return s;}
-function hearts(list){return list.map(([x,y,s])=>heart(x,y,s||1.4,'var(--petal)',.82)).join('');}
+function hearts(list){return list.map(([x,y,s],i)=>{const dur=(4.6+(i%3)).toFixed(1),bg=(-(i*1.3)).toFixed(2);return `<g><animateTransform attributeName="transform" type="translate" values="0 6; 0 -30" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/><g><animate attributeName="opacity" values="0;.85;.7;0" keyTimes="0;.2;.8;1" dur="${dur}s" begin="${bg}s" repeatCount="indefinite"/>${heart(x,y,s||1.4,'var(--petal)',.82)}</g></g>`;}).join('');}
 
 /* ---------- plate (framed painting on paper) ---------- */
 function buildPlate(p){
@@ -407,12 +439,12 @@ function buildPlate(p){
   const gid='g'+p.i, cid='c'+p.i;
   const has=n=>p.motifs&&p.motifs.includes(n);
   const prop=n=>p.props&&p.props.includes(n);
-  let back='', ground='', over='';
+  let back='', ground='', over='', anim='';
   if(has('sun')) back+=sun();
   if(has('moon')) back+=moon();
-  if(has('stars')) back+=stars();
-  if(prop('shootingStar')) back+=shootingStar();
   if(prop('rainbow')) back+=rainbow();
+  if(has('stars')) anim+=stars();
+  if(prop('shootingStar')) anim+=shootingStar();
   ground+=wash(400,300,470,150,'var(--hill-2)',.6);
   ground+=wash(400,360,520,120,'var(--hill-1)',.7);
   if(p.path!==false) ground+=`<path d="M356 400 L444 400 Q 432 350 416 320 L 384 320 Q 368 350 356 400 Z" fill="var(--path)" opacity=".55" filter="url(#soft)"/>`;
@@ -437,14 +469,14 @@ function buildPlate(p){
   if(prop('gift')) over+=giftFlower(400,398);
   if(prop('umbrella')) over+=umbrella(378,300);
   if(prop('phone')) over+=phone(474,392);
-  if(prop('musicNote')) over+=musicNote(512,300);
-  if(prop('threeStars')) over+=threeStars(436,292);
-  if(prop('sparkles')) over+=sparkles([[470,300,6],[300,120,5],[520,150,4.5],[560,250,5]]);
-  if(prop('hearts')) over+=hearts(p.heartsAt||[[380,300,1.5],[350,262,1],[410,258,1.1]]);
-  if(has('snow')) over+=snow();
-  if(has('petals')) over+=petals();
-  if(has('rain')) over+=rain();
-  if(has('leaves')) over+=leaves();
+  if(prop('musicNote')) anim+=musicNote(512,300);
+  if(prop('threeStars')) anim+=threeStars(436,292);
+  if(prop('sparkles')) anim+=sparkles([[470,300,6],[300,120,5],[520,150,4.5],[560,250,5]]);
+  if(prop('hearts')) anim+=hearts(p.heartsAt||[[380,300,1.5],[350,262,1],[410,258,1.1]]);
+  if(has('snow')) anim+=snow();
+  if(has('petals')) anim+=petals();
+  if(has('rain')) anim+=rain();
+  if(has('leaves')) anim+=leaves();
   return `<svg class="scene" viewBox="0 0 800 450" role="img" style="${sky}" preserveAspectRatio="xMidYMid meet">
     <defs>
       <linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--s-a)"/><stop offset="1" stop-color="var(--s-b)"/></linearGradient>
@@ -457,8 +489,9 @@ function buildPlate(p){
       <rect x="46" y="26" width="708" height="392" rx="4" fill="url(#${gid})"/>
       <g clip-path="url(#${cid})">${back}${ground}${chars}${over}</g>
     </g>
-    <rect x="46" y="26" width="708" height="392" rx="4" fill="none" stroke="var(--edge)" stroke-width="1" opacity=".6"/>
     <rect x="46" y="26" width="708" height="392" filter="url(#grain${p.i})" opacity=".5" clip-path="url(#${cid})"/>
+    <g class="fx" clip-path="url(#${cid})">${anim}</g>
+    <rect x="46" y="26" width="708" height="392" rx="4" fill="none" stroke="var(--edge)" stroke-width="1" opacity=".6"/>
   </svg>`;
 }
 
@@ -475,12 +508,12 @@ const PAGES=[
    zh:['收到妳那張小卡片的時候，','妳大概很難想像，牠有多麼感動。'],note:'（每個入睡前，牠都要偷偷讀上一遍）',
    en:['When your little card arrived,','you could hardly imagine how it moved him.','— every night, he reads it once more —']},
 
-  {season:'winter',solo:true,motifs:['snow','tree-bare'],panda:[366,406,.98],label:'冬',no:3,
+  {season:'winter',solo:true,motifs:['snow','tree-bare'],props:['footprints'],panda:[366,406,.98],label:'冬',no:3,
    zh:['2022、2023，','是牠人生裡一段很冷的冬天。','工作走到了瓶頸，心裡也準備接受了離別，','大熊貓幾乎，就要停下腳步了。'],
    en:['2022, 2023 — a long, cold winter.','Work had reached a wall,','and his heart was bracing for a parting.','Big Panda almost stopped walking.']},
 
   {season:'spring',motifs:['tree-blossom','petals'],props:['sparkles','hearts'],heartsAt:[[380,296,1.6]],panda:[300,404,1.0],dragon:[476,410,1.16],label:'春',no:4,
-   zh:['就在那個轉角，牠遇見了小小龍。','沒有想太多，只覺得——','這隻小小龍好暖，也好漂亮。'],note:'（噓，不要暗爽）',
+   zh:['就在那個轉角，牠遇見了小小龍。','沒有想太多，只覺得——','初入社會的小小龍，好窩心、也很漂亮!?'],note:'（噓，不要暗爽）',
    en:['There, at the turning, he met Tiny Dragon.','He thought little of it — only that','this little dragon was so warm, and so lovely.']},
 
   {season:'spring',motifs:['petals','flowers'],props:['footprints'],label:'春',no:5,
@@ -491,7 +524,7 @@ const PAGES=[
    zh:['後來牠才明白，','是小小龍陪牠走過了那段最暗的路，','也替牠分擔了好多好多的憂愁，點亮了這一切。','現在回頭看這四年——好值得、好知足、也好快樂。'],
    en:['Only later did he understand:','it was she who walked him through the darkest road,','who shared so many of his worries — and lit it all up.','Looking back on these four years — so worth it, so content, so happy.']},
 
-  {season:'summer',motifs:['sun'],props:['holdCoffee'],label:'夏',no:7,
+  {season:'summer',motifs:['sun'],props:['holdCoffee','hearts'],heartsAt:[[406,286,1.1],[356,258,.8]],label:'夏',no:7,
    zh:['還記得在偉詮、芯鼎、明遠、宏齊……','咖啡杯上的笑話，細數著無數個美好時光。','電審的路好難走，','但和妳一起走，好有意義。'],
    en:['At one client after another,','the jokes on our coffee cups counted out','so many good hours together.','The audit road was hard — but with you, so full of meaning.']},
 
@@ -515,7 +548,7 @@ const PAGES=[
    zh:['只是啊，下雨天，或路途很遠的時候，','牠總會忍不住，擔心起妳。','牠一直想守好那條界線，','卻知道自己常常越了線，真的很抱歉。'],
    en:['Only — on rainy days, or long roads,','he could not help but worry for you.','He tried to keep to the line,','though he knew he often crossed it. He is sorry.']},
 
-  {season:'summer',motifs:['sun'],props:['holdCoffee','laptop'],label:'秋',no:13,
+  {season:'summer',motifs:['sun'],props:['holdCoffee','laptop','hearts'],heartsAt:[[408,282,1.0],[472,300,.8]],label:'秋',no:13,
    zh:['也謝謝妳，','包容了大熊貓的任性，','總是被牠挖去咖啡廳，一整天。','謝謝妳，讓這份工作變有趣、變有意義。'],
    en:['And thank you, for indulging his willfulness —','forever dragged off to the café for a whole afternoon.','Thank you, for making this work fun, and full of meaning.']},
 
@@ -558,19 +591,46 @@ stage.innerHTML=PAGES.map((p,i)=>{
   const note=p.note?`<p class="note">${p.note}</p>`:'';
   const en=p.en?`<p class="en">${p.en.join('<br>')}</p>`:'';
   const sign=p.sign?`<div class="sign">${p.sign}</div>`:'';
-  const rl=p.readletter?`<button class="readletter" type="button" data-openletter>✒ 讀完整的信 · the whole letter</button>`:'';
+  const rl=p.readletter?`<button class="readletter" type="button" data-openletter>✉ 讀完整的信給妳 →</button>`:'';
   const foot=`<div class="colophon"><span class="season">${p.label}</span><span class="dot"></span><span class="no">${String(p.no).padStart(2,'0')}</span></div>`;
   return `<section class="page" data-i="${i}">${plate}
     <div class="verse">${zh}${note}${en}${sign}${rl}</div>${foot}${zones}</section>`;
 }).join('');
 
+/* honor reduced-motion: freeze the ambient scene animation */
+try{if(matchMedia('(prefers-reduced-motion: reduce)').matches){stage.querySelectorAll('svg.scene').forEach(s=>{try{s.pauseAnimations();}catch(e){}});}}catch(e){}
+
+/* theme toggle — warm wood (dark) ⇄ sunny (light) */
+(function(){
+  const root=document.documentElement, tc=document.getElementById('themeColor'), tb=document.getElementById('themeBtn'), KEY='pd_theme';
+  function apply(t){
+    root.setAttribute('data-theme',t);
+    if(tc) tc.setAttribute('content', t==='dark'?'#241a11':'#f4efe3');
+    if(tb){tb.textContent=t==='dark'?'☀':'☾'; const lbl=t==='dark'?'切換到亮色系':'切換到暖木深色'; tb.setAttribute('aria-label',lbl); tb.title=lbl;}
+  }
+  let t='dark';
+  try{const s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  apply(t);
+  if(tb) tb.onclick=()=>{t=t==='dark'?'light':'dark'; try{localStorage.setItem(KEY,t);}catch(e){} apply(t);};
+})();
+
 let cur=0;
 const pages=[...stage.querySelectorAll('.page')];
 const count=document.getElementById('count');
 const prevBtn=document.getElementById('prev'), nextBtn=document.getElementById('next');
+function reduceMotion(){try{return matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){return false;}}
 function show(n,dir){
-  cur=Math.max(0,Math.min(total-1,n));
-  pages.forEach((el,i)=>{el.classList.toggle('is-current',i===cur); if(i===cur) el.classList.toggle('dir-prev',dir<0);});
+  const target=Math.max(0,Math.min(total-1,n));
+  const old=cur;
+  cur=target;
+  pages.forEach(el=>el.classList.remove('turning','to-prev'));
+  pages.forEach((el,i)=>el.classList.toggle('is-current',i===cur));
+  if(old!==cur && dir && !reduceMotion()){
+    const oldEl=pages[old];
+    oldEl.classList.add('turning'); if(dir<0) oldEl.classList.add('to-prev');
+    const done=()=>{oldEl.classList.remove('turning','to-prev'); oldEl.removeEventListener('animationend',done);};
+    oldEl.addEventListener('animationend',done);
+  }
   count.textContent=`${String(cur+1).padStart(2,'0')} / ${String(total).padStart(2,'0')}`;
   prevBtn.disabled=cur===0; nextBtn.disabled=cur===total-1;
   try{document.querySelector('.leaf').scrollIntoView({block:'nearest'});}catch(e){}
@@ -586,10 +646,9 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(1);}
   if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}
 });
-let tx=0,ty=0;
-stage.addEventListener('touchstart',e=>{tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;},{passive:true});
-stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>38&&Math.abs(dx)>Math.abs(dy)*1.3)go(dx<0?1:-1);},{passive:true});
-document.getElementById('printBtn').onclick=()=>window.print();
+let tx=0,ty=0,tt=0;
+stage.addEventListener('touchstart',e=>{tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;tt=Date.now();},{passive:true});
+stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty,dt=Date.now()-tt,v=Math.abs(dx)/Math.max(dt,1);if(Math.abs(dx)>Math.abs(dy)*1.3&&(Math.abs(dx)>38||(v>0.35&&Math.abs(dx)>14)))go(dx<0?1:-1);},{passive:true});
 
 const lv=document.getElementById('letterView');
 function openLetter(){lv.hidden=false;lv.scrollTop=0;}
